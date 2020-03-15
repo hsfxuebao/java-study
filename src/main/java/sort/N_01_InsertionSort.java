@@ -1,31 +1,29 @@
-package common.sort;
+package sort;
 
 import java.util.Arrays;
 
 /**
- * 简单选择排序
+ * 直接插入排序
  * 时间复杂度O（n^2）
  * 空间复杂度O（1）
  */
-public class N_02_SelectionSort {
+public class N_01_InsertionSort {
 
-	public static void selectionSort(int[] arr) {
+	public static void insertionSort(int[] arr) {
 		if (arr == null || arr.length < 2) {
 			return;
 		}
-		for (int i = 0; i < arr.length - 1; i++) {
-			int minIndex = i;
-			for (int j = i + 1; j < arr.length; j++) {
-				minIndex = arr[j] < arr[minIndex] ? j : minIndex;
+		for (int i = 1; i < arr.length; i++) {
+			for (int j = i - 1; j >= 0 && arr[j] > arr[j + 1]; j--) {
+				swap(arr, j, j + 1);
 			}
-			swap(arr, i, minIndex);
 		}
 	}
 
 	public static void swap(int[] arr, int i, int j) {
-		int tmp = arr[i];
-		arr[i] = arr[j];
-		arr[j] = tmp;
+		arr[i] = arr[i] ^ arr[j];
+		arr[j] = arr[i] ^ arr[j];
+		arr[i] = arr[i] ^ arr[j];
 	}
 
 	// for test
@@ -93,12 +91,10 @@ public class N_02_SelectionSort {
 		for (int i = 0; i < testTime; i++) {
 			int[] arr1 = generateRandomArray(maxSize, maxValue);
 			int[] arr2 = copyArray(arr1);
-			selectionSort(arr1);
+			insertionSort(arr1);
 			comparator(arr2);
 			if (!isEqual(arr1, arr2)) {
 				succeed = false;
-				printArray(arr1);
-				printArray(arr2);
 				break;
 			}
 		}
@@ -106,7 +102,7 @@ public class N_02_SelectionSort {
 
 		int[] arr = generateRandomArray(maxSize, maxValue);
 		printArray(arr);
-		selectionSort(arr);
+		insertionSort(arr);
 		printArray(arr);
 	}
 

@@ -1,8 +1,7 @@
-package common.hash;
+package hash;
 
 import com.google.common.base.Objects;
 import com.google.common.collect.Maps;
-import com.sun.xml.internal.xsom.XSWildcard;
 
 import java.util.List;
 import java.util.Map;

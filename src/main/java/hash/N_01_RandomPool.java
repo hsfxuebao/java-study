@@ -1,4 +1,4 @@
-package common.hash;
+package hash;
 
 import com.google.common.collect.Maps;
 

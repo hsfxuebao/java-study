@@ -1,27 +1,47 @@
-package common.sort;
+package sort;
 
 import java.util.Arrays;
 
-public class N_06_BucketSort {
+/**
+ * 归并排序
+ * 时间复杂度O（nlognn）
+ * 空间复杂度O（n）
+ */
+public class N_05_MergeSort {
 
-	// only for 0~200 value
-	public static void bucketSort(int[] arr) {
+	public static void mergeSort(int[] arr) {
 		if (arr == null || arr.length < 2) {
 			return;
 		}
-		int max = Integer.MIN_VALUE;
-		for (int i = 0; i < arr.length; i++) {
-			max = Math.max(max, arr[i]);
+		mergeSort(arr, 0, arr.length - 1);
+	}
+
+	public static void mergeSort(int[] arr, int l, int r) {
+		if (l == r) {
+			return;
 		}
-		int[] bucket = new int[max + 1];
-		for (int i = 0; i < arr.length; i++) {
-			bucket[arr[i]]++;
-		}
+		int mid = l + ((r - l) >> 1);
+		mergeSort(arr, l, mid);
+		mergeSort(arr, mid + 1, r);
+		merge(arr, l, mid, r);
+	}
+
+	public static void merge(int[] arr, int l, int m, int r) {
+		int[] help = new int[r - l + 1];
 		int i = 0;
-		for (int j = 0; j < bucket.length; j++) {
-			while (bucket[j]-- > 0) {
-				arr[i++] = j;
-			}
+		int p1 = l;
+		int p2 = m + 1;
+		while (p1 <= m && p2 <= r) {
+			help[i++] = arr[p1] < arr[p2] ? arr[p1++] : arr[p2++];
+		}
+		while (p1 <= m) {
+			help[i++] = arr[p1++];
+		}
+		while (p2 <= r) {
+			help[i++] = arr[p2++];
+		}
+		for (i = 0; i < help.length; i++) {
+			arr[l + i] = help[i];
 		}
 	}
 
@@ -34,7 +54,7 @@ public class N_06_BucketSort {
 	public static int[] generateRandomArray(int maxSize, int maxValue) {
 		int[] arr = new int[(int) ((maxSize + 1) * Math.random())];
 		for (int i = 0; i < arr.length; i++) {
-			arr[i] = (int) ((maxValue + 1) * Math.random());
+			arr[i] = (int) ((maxValue + 1) * Math.random()) - (int) (maxValue * Math.random());
 		}
 		return arr;
 	}
@@ -85,12 +105,12 @@ public class N_06_BucketSort {
 	public static void main(String[] args) {
 		int testTime = 500000;
 		int maxSize = 100;
-		int maxValue = 150;
+		int maxValue = 100;
 		boolean succeed = true;
 		for (int i = 0; i < testTime; i++) {
 			int[] arr1 = generateRandomArray(maxSize, maxValue);
 			int[] arr2 = copyArray(arr1);
-			bucketSort(arr1);
+			mergeSort(arr1);
 			comparator(arr2);
 			if (!isEqual(arr1, arr2)) {
 				succeed = false;
@@ -103,7 +123,7 @@ public class N_06_BucketSort {
 
 		int[] arr = generateRandomArray(maxSize, maxValue);
 		printArray(arr);
-		bucketSort(arr);
+		mergeSort(arr);
 		printArray(arr);
 
 	}

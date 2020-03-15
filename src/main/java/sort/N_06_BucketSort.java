@@ -1,29 +1,28 @@
-package common.sort;
+package sort;
 
 import java.util.Arrays;
 
-/**
- * 冒泡排序：时间复杂度0（n^2）,空间复杂度O（1）
- */
-public class N_00_BubbleSort {
+public class N_06_BucketSort {
 
-	public static void bubbleSort(int[] arr) {
+	// only for 0~200 value
+	public static void bucketSort(int[] arr) {
 		if (arr == null || arr.length < 2) {
 			return;
 		}
-		for (int e = arr.length - 1; e > 0; e--) {
-			for (int i = 0; i < e; i++) {
-				if (arr[i] > arr[i + 1]) {
-					swap(arr, i, i + 1);
-				}
+		int max = Integer.MIN_VALUE;
+		for (int i = 0; i < arr.length; i++) {
+			max = Math.max(max, arr[i]);
+		}
+		int[] bucket = new int[max + 1];
+		for (int i = 0; i < arr.length; i++) {
+			bucket[arr[i]]++;
+		}
+		int i = 0;
+		for (int j = 0; j < bucket.length; j++) {
+			while (bucket[j]-- > 0) {
+				arr[i++] = j;
 			}
 		}
-	}
-
-	public static void swap(int[] arr, int i, int j) {
-		arr[i] = arr[i] ^ arr[j];
-		arr[j] = arr[i] ^ arr[j];
-		arr[i] = arr[i] ^ arr[j];
 	}
 
 	// for test
@@ -35,7 +34,7 @@ public class N_00_BubbleSort {
 	public static int[] generateRandomArray(int maxSize, int maxValue) {
 		int[] arr = new int[(int) ((maxSize + 1) * Math.random())];
 		for (int i = 0; i < arr.length; i++) {
-			arr[i] = (int) ((maxValue + 1) * Math.random()) - (int) (maxValue * Math.random());
+			arr[i] = (int) ((maxValue + 1) * Math.random());
 		}
 		return arr;
 	}
@@ -86,15 +85,17 @@ public class N_00_BubbleSort {
 	public static void main(String[] args) {
 		int testTime = 500000;
 		int maxSize = 100;
-		int maxValue = 100;
+		int maxValue = 150;
 		boolean succeed = true;
 		for (int i = 0; i < testTime; i++) {
 			int[] arr1 = generateRandomArray(maxSize, maxValue);
 			int[] arr2 = copyArray(arr1);
-			bubbleSort(arr1);
+			bucketSort(arr1);
 			comparator(arr2);
 			if (!isEqual(arr1, arr2)) {
 				succeed = false;
+				printArray(arr1);
+				printArray(arr2);
 				break;
 			}
 		}
@@ -102,8 +103,9 @@ public class N_00_BubbleSort {
 
 		int[] arr = generateRandomArray(maxSize, maxValue);
 		printArray(arr);
-		bubbleSort(arr);
+		bucketSort(arr);
 		printArray(arr);
+
 	}
 
 }

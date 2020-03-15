@@ -1,4 +1,4 @@
-package common.sort;
+package sort;
 
 /**
  * 荷兰国旗问题：

@@ -1,4 +1,4 @@
-package common.array;
+package array;
 
 /**
  * @author haoshaofei

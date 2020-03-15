@@ -1,4 +1,4 @@
-package common.stackque;
+package stackque;
 
 /**
  * @author haoshaofei

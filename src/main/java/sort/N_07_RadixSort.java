@@ -1,50 +1,62 @@
-package common.sort;
+package sort;
 
 import java.util.Arrays;
 
 /**
- * 快排
- * 时间复杂度O（nlogn）
- * 空间复杂度O（logn）
+ * 基数排序
  */
-public class N_04_QuickSort {
+public class N_07_RadixSort {
 
-	public static void quickSort(int[] arr) {
+	// only for no-negative value
+	public static void radixSort(int[] arr) {
 		if (arr == null || arr.length < 2) {
 			return;
 		}
-		quickSort(arr, 0, arr.length - 1);
+		radixSort(arr, 0, arr.length - 1, maxbits(arr));
 	}
 
-	public static void quickSort(int[] arr, int l, int r) {
-		if (l < r) {
-			swap(arr, l + (int) (Math.random() * (r - l + 1)), r);
-			int[] p = partition(arr, l, r);
-			quickSort(arr, l, p[0] - 1);
-			quickSort(arr, p[1] + 1, r);
+	public static int maxbits(int[] arr) {
+		int max = Integer.MIN_VALUE;
+		for (int i = 0; i < arr.length; i++) {
+			max = Math.max(max, arr[i]);
 		}
+		int res = 0;
+		while (max != 0) {
+			res++;
+			max /= 10;
+		}
+		return res;
 	}
 
-	public static int[] partition(int[] arr, int l, int r) {
-		int less = l - 1;
-		int more = r;
-		while (l < more) {
-			if (arr[l] < arr[r]) {
-				swap(arr, ++less, l++);
-			} else if (arr[l] > arr[r]) {
-				swap(arr, --more, l);
-			} else {
-				l++;
+	public static void radixSort(int[] arr, int begin, int end, int digit) {
+		final int radix = 10;
+		int i = 0, j = 0;
+		int[] count = new int[radix];
+		int[] bucket = new int[end - begin + 1];
+		for (int d = 1; d <= digit; d++) {
+			for (i = 0; i < radix; i++) {
+				count[i] = 0;
+			}
+			for (i = begin; i <= end; i++) {
+				j = getDigit(arr[i], d);
+				count[j]++;
+			}
+			for (i = 1; i < radix; i++) {
+				count[i] = count[i] + count[i - 1];
+			}
+			for (i = end; i >= begin; i--) {
+				j = getDigit(arr[i], d);
+				bucket[count[j] - 1] = arr[i];
+				count[j]--;
+			}
+			for (i = begin, j = 0; i <= end; i++, j++) {
+				arr[i] = bucket[j];
 			}
 		}
-		swap(arr, more, r);
-		return new int[] { less + 1, more };
 	}
 
-	public static void swap(int[] arr, int i, int j) {
-		int tmp = arr[i];
-		arr[i] = arr[j];
-		arr[j] = tmp;
+	public static int getDigit(int x, int d) {
+		return ((x / ((int) Math.pow(10, d - 1))) % 10);
 	}
 
 	// for test
@@ -56,7 +68,7 @@ public class N_04_QuickSort {
 	public static int[] generateRandomArray(int maxSize, int maxValue) {
 		int[] arr = new int[(int) ((maxSize + 1) * Math.random())];
 		for (int i = 0; i < arr.length; i++) {
-			arr[i] = (int) ((maxValue + 1) * Math.random()) - (int) (maxValue * Math.random());
+			arr[i] = (int) ((maxValue + 1) * Math.random());
 		}
 		return arr;
 	}
@@ -107,12 +119,12 @@ public class N_04_QuickSort {
 	public static void main(String[] args) {
 		int testTime = 500000;
 		int maxSize = 100;
-		int maxValue = 100;
+		int maxValue = 100000;
 		boolean succeed = true;
 		for (int i = 0; i < testTime; i++) {
 			int[] arr1 = generateRandomArray(maxSize, maxValue);
 			int[] arr2 = copyArray(arr1);
-			quickSort(arr1);
+			radixSort(arr1);
 			comparator(arr2);
 			if (!isEqual(arr1, arr2)) {
 				succeed = false;
@@ -125,7 +137,7 @@ public class N_04_QuickSort {
 
 		int[] arr = generateRandomArray(maxSize, maxValue);
 		printArray(arr);
-		quickSort(arr);
+		radixSort(arr);
 		printArray(arr);
 
 	}
