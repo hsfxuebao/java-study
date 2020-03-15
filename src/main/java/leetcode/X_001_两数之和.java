@@ -24,7 +24,7 @@ public class X_001_两数之和 {
      * 用一个map存储起来其中一个，然后遍历
      */
     public int[] twoSum(int[] nums, int target) {
-        Map<Integer,Integer> map = new HashMap<>();
+        Map<Integer,Integer> map = new HashMap<Integer, Integer>();
         for (int i = 0;i < nums.length;i++) {
             int tmp = target - nums[i];
             if (map.containsKey(tmp)) {

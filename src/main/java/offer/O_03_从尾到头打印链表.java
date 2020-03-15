@@ -1,8 +1,6 @@
 package offer;
 
 
-import leetcode.ListNode;
-
 import java.util.ArrayList;
 
 /**
