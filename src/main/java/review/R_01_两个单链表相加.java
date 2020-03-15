@@ -1,7 +1,7 @@
 package review;
 
-import common.Node;
-import newcoder.primary.stackque.Code_07_ReverseList;
+import common.LinkedNode;
+import util.PrintUtils;
 
 /**
  * @author haoshaofei
@@ -18,30 +18,30 @@ public class R_01_两个单链表相加 {
 	/**
 	 * 思路1，反转链表，将低位到高位模拟加法
 	 */
-	public static  Node addNode(Node head1, Node head2) {
+	public static LinkedNode addLinkedNode(LinkedNode head1, LinkedNode head2) {
 		//逆序两个链表
-		head1 = reverseNode(head1);
-		head2 = reverseNode(head2);
+		head1 = reverseLinkedNode(head1);
+		head2 = reverseLinkedNode(head2);
 
-		Node c1 = head1;
-		Node c2 = head2;
+		LinkedNode c1 = head1;
+		LinkedNode c2 = head2;
 		int num1 = 0;
 		int num2 = 0;
 		int sum = 0;
 		//进位
 		int wei = 0;
 
-		Node pre = null;
-		Node node = null;
+		LinkedNode pre = null;
+		LinkedNode LinkedNode = null;
 
 		while (c1 != null || c2 != null) {
 
 			num1 = c1 != null ? c1.value : 0;
 			num2 = c2 != null ? c2.value : 0;
 			sum = num1 + num2 + wei;
-			pre = node;
-			node = new Node(sum % 10);
-			node.next = pre;
+			pre = LinkedNode;
+			LinkedNode = new LinkedNode(sum % 10);
+			LinkedNode.next = pre;
 
 			wei = sum / 10;
 			c1 = c1 != null ? c1.next : null;
@@ -51,15 +51,15 @@ public class R_01_两个单链表相加 {
 
 		//循环相加之后，判断进位是否还是1
 		if (wei != 0) {
-			pre = node;
-			node = new Node(1);
-			node.next = pre;
+			pre = LinkedNode;
+			LinkedNode = new LinkedNode(1);
+			LinkedNode.next = pre;
 		}
 
 		//还原两个单链表结构
-		reverseNode(head1);
-		reverseNode(head2);
-		return node;
+		reverseLinkedNode(head1);
+		reverseLinkedNode(head2);
+		return LinkedNode;
 
 	}
 
@@ -67,10 +67,10 @@ public class R_01_两个单链表相加 {
 	 * 反转链表
 	 * @param head
 	 */
-	public static Node reverseNode(Node head) {
+	public static LinkedNode reverseLinkedNode(LinkedNode head) {
 
-		Node next = null;
-		Node pre = null;
+		LinkedNode next = null;
+		LinkedNode pre = null;
 
 		while (head != null) {
 
@@ -86,39 +86,30 @@ public class R_01_两个单链表相加 {
 
 	public static void main(String[] args) {
 
-		Node node1 = new Node(1);
-		Node node2 = new Node(2);
-		Node node3 = new Node(3);
-		Node node4 = new Node(4);
-		Node node5 = new Node(5);
-		Node node6 = new Node(6);
+		LinkedNode node1 = new LinkedNode(1);
+		LinkedNode node2 = new LinkedNode(2);
+		LinkedNode node3 = new LinkedNode(3);
+		LinkedNode node4 = new LinkedNode(4);
+		LinkedNode node5 = new LinkedNode(5);
+		LinkedNode node6 = new LinkedNode(6);
 
 		node1.next = node2;
 		node2.next = node3;
 		node3.next = node4;
 		node4.next = node5;
 		node5.next = node6;
-		node6.next = null;
 
-		Node node9 = new Node(9);
-		node9.next = node4;
-		node4.next = node5;
-		node5.next = null;
+		LinkedNode node9 = new LinkedNode(9);
+		LinkedNode node33 = new LinkedNode(3);
+		node9.next = node33;
 
-		Node node = addNode(node9, node1);
+		LinkedNode node = addLinkedNode(node9, node1);
 
-		printLinkedList(node);
+		PrintUtils.printLinkedList(node);
 
 
 	}
 
-	public static void printLinkedList(Node head) {
-		System.out.print("Linked List: ");
-		while (head != null) {
-			System.out.print(head.value + " ");
-			head = head.next;
-		}
-		System.out.println();
-	}
+
 
 }
