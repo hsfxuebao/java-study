@@ -13,6 +13,23 @@ import common.LinkedNode;
 public class PrintUtils {
 
 
+	/**
+	 * 打印二维数组
+	 * @param matrix
+	 */
+	public static void printMatrix(int[][] matrix) {
+		for (int i = 0; i != matrix.length; i++) {
+			for (int j = 0; j != matrix[0].length; j++) {
+				System.out.print(matrix[i][j] + " ");
+			}
+			System.out.println();
+		}
+	}
+
+	/**
+	 * 打印单链表
+	 * @param head
+	 */
 	public static void printLinkedList(LinkedNode head) {
 		System.out.print("Linked List: ");
 		while (head != null) {
@@ -22,6 +39,10 @@ public class PrintUtils {
 		System.out.println();
 	}
 
+	/**
+	 * 打印双端链表
+	 * @param head
+	 */
 	public static void printDoubleLinkedList(DoubleLinkedNode head) {
 		System.out.print("Double Linked List: ");
 		DoubleLinkedNode end = null;
