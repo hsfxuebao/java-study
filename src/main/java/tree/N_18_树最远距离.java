@@ -24,7 +24,7 @@ public class N_18_树最远距离 {
 		public int h;
 
 		public ReturnType(int m, int h) {
-			this.maxDistance = m;;
+			this.maxDistance = m;
 			this.h = h;
 		}
 	}

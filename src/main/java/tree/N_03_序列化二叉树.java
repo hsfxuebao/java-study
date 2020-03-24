@@ -122,7 +122,7 @@ public class N_03_序列化二叉树 {
 
 	public static String getSpace(int num) {
 		String space = " ";
-		StringBuffer buf = new StringBuffer("");
+		StringBuffer buf = new StringBuffer();
 		for (int i = 0; i < num; i++) {
 			buf.append(space);
 		}

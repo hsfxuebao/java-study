@@ -1,5 +1,15 @@
 package kmp;
 
+/**
+ * https://blog.csdn.net/duoduo18up/article/details/80686284
+ *
+ * 给定一个字符串  如何加最短的字符（只能在原始串的后面进行添加）使其构成一个长的字符串且包含两个原始字符串~
+ * 思路：其实就是最大前后缀长度数组~   e.g.  abcabc ---->abcabcabc  最少增加3个
+ *
+ * 多求一位nextArr     可以看出之前4个复用  所以再添一位就好~
+ *
+ * 总结： 在KMP中nextArr数组基础上 多求一位终止位  将不是的补上即可
+ */
 public class N_02_KMP_ShortestHaveTwice {
 
 	public static String answer(String str) {
@@ -11,7 +21,7 @@ public class N_02_KMP_ShortestHaveTwice {
 			return str + str;
 		}
 		if (chas.length == 2) {
-			return chas[0] == chas[1] ? (str + String.valueOf(chas[0])) : (str + str);
+			return chas[0] == chas[1] ? (str + chas[0]) : (str + str);
 		}
 		int endNext = endNextLength(chas);
 		return str + str.substring(endNext);

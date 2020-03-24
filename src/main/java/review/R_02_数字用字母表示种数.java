@@ -21,7 +21,7 @@ public class R_02_数字用字母表示种数 {
 			return 0;
 		}
 		int length = str.length();
-		Integer dp[] = new Integer[length];
+		Integer[] dp = new Integer[length];
 
 		//设置初始值
 		dp[0] = 1;

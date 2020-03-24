@@ -168,7 +168,7 @@ public class N_16_Morris遍历 {
 
 	public static String getSpace(int num) {
 		String space = " ";
-		StringBuffer buf = new StringBuffer("");
+		StringBuffer buf = new StringBuffer();
 		for (int i = 0; i < num; i++) {
 			buf.append(space);
 		}

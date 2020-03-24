@@ -35,7 +35,7 @@ public class N_07_正则表达式匹配 {
 		}
 		char[] s = str.toCharArray();
 		char[] e = exp.toCharArray();
-		return isValid(s, e) ? process(s, e, 0, 0) : false;
+		return isValid(s, e) && process(s, e, 0, 0);
 	}
 
 	public static boolean process(char[] s, char[] e, int si, int ei) {

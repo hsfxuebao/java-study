@@ -30,10 +30,17 @@ public class N_01_KMP {
 		return mi == ms.length ? si - mi : -1;
 	}
 
+	/**
+	 * 最大公共前后缀
+	 * @param ms
+	 * @return
+	 */
 	public static int[] getNextArray(char[] ms) {
 		if (ms.length == 1) {
 			return new int[] { -1 };
 		}
+
+		//next数组就是该字符最长公共前后缀size（包括自己）；
 		int[] next = new int[ms.length];
 		next[0] = -1;
 		next[1] = 0;

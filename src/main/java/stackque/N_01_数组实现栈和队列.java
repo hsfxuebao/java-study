@@ -48,7 +48,7 @@ public class N_01_数组实现栈和队列 {
 
 	public static class ArrayQueue {
 
-		private Integer arr[];
+		private Integer[] arr;
 		private Integer first;
 		private Integer last;
 		private Integer size;

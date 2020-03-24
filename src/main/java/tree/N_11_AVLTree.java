@@ -53,7 +53,7 @@ public class N_11_AVLTree extends N_13_AbstractSelfBalancingBinarySearchTree {
                 // if replaced from getMinimum(deleteNode.right) then come back there and update heights
                 AVLNode minimum = successorNode.right != null ? (AVLNode)getMinimum(successorNode.right) : (AVLNode)successorNode;
                 recomputeHeight(minimum);
-                rebalance((AVLNode)minimum);
+                rebalance(minimum);
             } else {
                 recomputeHeight((AVLNode)deleteNode.parent);
                 rebalance((AVLNode)deleteNode.parent);

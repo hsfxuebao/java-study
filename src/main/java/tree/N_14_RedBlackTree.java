@@ -14,7 +14,7 @@ public class N_14_RedBlackTree extends N_13_AbstractSelfBalancingBinarySearchTre
     protected enum ColorEnum {
         RED,
         BLACK
-    };
+    }
 
     protected static final RedBlackNode nilNode = new RedBlackNode(null, null, null, null, ColorEnum.BLACK);
 
@@ -249,11 +249,11 @@ public class N_14_RedBlackTree extends N_13_AbstractSelfBalancingBinarySearchTre
     }
     
     private boolean isBlack(Node node) {
-        return node != null ? ((RedBlackNode)node).color == ColorEnum.BLACK : false;
+        return node != null && ((RedBlackNode) node).color == ColorEnum.BLACK;
     }
     
     private boolean isRed(Node node) {
-        return node != null ? ((RedBlackNode)node).color == ColorEnum.RED : false;
+        return node != null && ((RedBlackNode) node).color == ColorEnum.RED;
     }
 
     /**
@@ -271,7 +271,7 @@ public class N_14_RedBlackTree extends N_13_AbstractSelfBalancingBinarySearchTre
                 RedBlackNode uncle = (RedBlackNode) grandParent.right;
                 // case1 - uncle and parent are both red
                 // re color both of them to black
-                if (((RedBlackNode) uncle).color == ColorEnum.RED) {
+                if (uncle.color == ColorEnum.RED) {
                     parent.color = ColorEnum.BLACK;
                     uncle.color = ColorEnum.BLACK;
                     grandParent.color = ColorEnum.RED;
@@ -294,7 +294,7 @@ public class N_14_RedBlackTree extends N_13_AbstractSelfBalancingBinarySearchTre
                 RedBlackNode uncle = (RedBlackNode) grandParent.left;
                 // case1 - uncle and parent are both red
                 // re color both of them to black
-                if (((RedBlackNode) uncle).color == ColorEnum.RED) {
+                if (uncle.color == ColorEnum.RED) {
                     parent.color = ColorEnum.BLACK;
                     uncle.color = ColorEnum.BLACK;
                     grandParent.color = ColorEnum.RED;

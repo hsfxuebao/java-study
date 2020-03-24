@@ -1,5 +1,8 @@
 package kmp;
 
+/**
+ * 给定两个树  判断树2是否为树1的子树    是则返回true
+ */
 public class N_03_KMP_T1SubtreeEqualsT2 {
 
 	public static class Node {

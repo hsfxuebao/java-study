@@ -117,11 +117,11 @@ public class N_12_TopK问题 {
 	}
 
 	public static boolean isContains(int row, int col, HashSet<String> set) {
-		return set.contains(String.valueOf(row + "_" + col));
+		return set.contains(row + "_" + col);
 	}
 
 	public static void addPositionToSet(int row, int col, HashSet<String> set) {
-		set.add(String.valueOf(row + "_" + col));
+		set.add(row + "_" + col);
 	}
 
 	// For test, this method is inefficient but absolutely right

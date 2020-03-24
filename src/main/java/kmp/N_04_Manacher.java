@@ -1,5 +1,8 @@
 package kmp;
 
+/**
+ * 给定给一个字符串str,返回这个字符传中最长回文子串的长度
+ */
 public class N_04_Manacher {
 
 	public static char[] manacherString(String str) {
