@@ -11,4 +11,5 @@
 
 1. [京东+百度一面](https://juejin.im/post/5e0c8ebde51d4541233fd271)
 2. [我的面试标准：1.能干活；2.Java基础好；3.熟悉分布式框架](https://juejin.im/post/5e424e57f265da572660f693)
+3. [拿到京东offer经验分享「面试经历+面试真题](https://juejin.im/post/5e64fbc2f265da5751557731)
 

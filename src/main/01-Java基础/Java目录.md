@@ -7,10 +7,25 @@
 
 1. [JVM面试知识点（GC、参数、引用）](https://juejin.im/post/5e7c90c5f265da42cc3e1b24)
 2. [对象和数组并不是都是在堆上分配内存的](https://juejin.im/post/5e53961ff265da5740641f12)
+3. [JVM虚拟机CMS和G1收集器详解](https://juejin.im/post/5e43a766518825497467ea13)
+4. [JVM系列(一) - JVM总体概述](https://juejin.im/post/5e43abe9518825492b50a37c)
+5. [JVM系列(二) - JVM内存区域](https://juejin.im/post/5e4a4b7ef265da572c5485f4)
+6. [JVM系列(三) - JVM对象探秘](https://juejin.im/post/5e4b464a6fb9a07ccd518105)
+7. [JVM系列(四) - JVM类加载机制详解](https://juejin.im/post/5e4b4981f265da57697103d3)
+8. [JVM系列(五) - JVM垃圾回收算法](https://juejin.im/post/5e4cb4cbe51d4526c70fa545)
+9. [JVM系列(六) - JVM垃圾回收器](https://juejin.im/post/5e4cbafbe51d4526c550a601)
+10. [JVM系列(七) - JVM线上监控工具](https://juejin.im/post/5e4cbb98e51d4526f65cbdad)
+11. [《深入理解Java虚拟机》第2版挖的坑终于在第3版中被R大填平了](https://juejin.im/post/5e4a46c8518825496452a9e2)
+12. [并发的可达性分析](https://juejin.im/post/5e63ab6251882549165423a1)
+13. [Java堆内存是线程共享的！面试官：你确定吗？](https://juejin.im/post/5e66f59f6fb9a07cde64e6da)
 
 ### 02-字节码与类加载
 
 ### 03-性能监控和调优
+
+1. [JDK监控和故障处理工具揭秘](https://juejin.im/post/5e43a7e051882549417fbcf9)
+2. [阿里巴巴开源的 Java 诊断工具Arthas【入门篇】](https://juejin.im/post/5e537a1be51d4526d0595347)
+3. [cpu使用率过高和jvm old占用过高排查过程](https://juejin.im/post/5e74174ce51d4527196d7708)
 
 
 
@@ -138,3 +153,7 @@
 
 1. [Poi 中文API文档](https://juejin.im/post/5e5f2da4e51d4526c550b51f)
 2. [开源工具EasyExcel](https://juejin.im/post/5e5f5c1c6fb9a07ca24f5a1a)
+
+### 02-Google guava工具类
+
+1. [Google guava工具类的介绍和使用](https://juejin.im/post/5e6396dc518825496706884d)
