@@ -1,5 +1,6 @@
 package algorithm.array;
 
+import algorithm.util.PrintUtils;
 import com.google.common.collect.Sets;
 import sun.jvm.hotspot.ui.action.FindAction;
 
@@ -68,7 +69,7 @@ public class L_面1621_交换和 {
 	public static void main(String[] args) {
 		int[] num1 = {4, 1, 2, 1, 1, 2};
 		int[] num2 = {3, 6, 3, 3};
-		int[] swapValues = findSwapValues(num1, num2);
-		System.out.println();
+		PrintUtils.printArray(findSwapValues(num1, num2));
+
 	}
 }

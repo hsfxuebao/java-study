@@ -13,6 +13,15 @@ import algorithm.common.LinkedNode;
 public class PrintUtils {
 
 
+	/**'
+	 * 打印一维数组
+	 */
+	public static void printArray(int[] arr) {
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
+	}
+
 	/**
 	 * 打印二维数组
 	 * @param matrix
