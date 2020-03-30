@@ -93,6 +93,11 @@ public class N_13_边界都是1最大正方形大小 {
 		int[][] matrix = generateRandom01Matrix(7, 8);
 		printMatrix(matrix);
 		System.out.println(getMaxSize(matrix));
+		int[][] matrix1 = {{1,0,1},
+				{0,0,1},
+				{0,0,1}};
+		System.out.println(getMaxSize(matrix1));
+
 	}
 
 }

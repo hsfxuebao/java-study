@@ -28,7 +28,7 @@ public class L_面1003_搜索旋转数组 {
 
 		while (left < right) {
 
-			int mid = ((left + right) >> 1);
+			int mid = left + ((right - left) >> 1);
 			//左值小于中值，说左边区间是升序
 			if (arr[left] < arr[mid]) {
 				if (arr[left] <= target && target <= arr[mid]) {
