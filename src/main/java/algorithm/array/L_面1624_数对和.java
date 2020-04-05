@@ -5,6 +5,7 @@ import algorithm.util.PrintUtils;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * @author haoshaofei
@@ -54,6 +55,15 @@ public class L_面1624_数对和 {
 		int[] num = {5,6,5,6};
 
 		System.out.println(pairSums(num, 11));
+
+		Random random = new Random();
+		System.out.println(random.nextInt(100));
+		System.out.println(random.nextInt(100));
+		System.out.println(random.nextInt(100));
+		System.out.println(random.nextInt(100));
+		System.out.println(random.nextInt(100));
+		System.out.println(random.nextInt(100));
+		System.out.println(random.nextInt(100));
 	}
 
 }
