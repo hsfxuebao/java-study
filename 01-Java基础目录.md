@@ -18,7 +18,14 @@
 11. [《深入理解Java虚拟机》第2版挖的坑终于在第3版中被R大填平了](https://juejin.im/post/5e4a46c8518825496452a9e2)
 12. [并发的可达性分析](https://juejin.im/post/5e63ab6251882549165423a1)
 13. [Java堆内存是线程共享的！面试官：你确定吗？](https://juejin.im/post/5e66f59f6fb9a07cde64e6da)
-14. [JVM(二)-类加载子系统](https://juejin.im/post/5e8d6c1a6fb9a03c840d60ef)
+
+
+
+强烈推荐：
+
+1. [JVM(一)-JVM与Java体系结构](https://juejin.im/post/5e8e934be51d4546b4351079)
+2. [JVM(二)-类加载子系统](https://juejin.im/post/5e8d6c1a6fb9a03c840d60ef)
+3. [JVM(三)-运行时数据区（栈和程序计数器）](https://juejin.im/post/5e8edda45188257394723c74)
 
 ### 02-字节码与类加载
 
@@ -30,9 +37,20 @@
 
 
 
+### 04-推荐书籍
+
+1. Java虚拟机规范（Java SE 8版）
+2. 深入理解Java虚拟机（第三版）
+3. 深入理解JVM & G1 GC
+4. 揭秘Java虚拟机（JVM设计原理与实现）
+5. Java虚拟机基础教程
+6. 实战Java虚拟机（JVM故障诊断与性能优化）
+7. Java虚拟机精讲
+
 ## 02-集合
 ### 01-Map
-![Map接口](https://github.com/hsfxuebao/java-study/blob/master/src/main/01-Java%E5%9F%BA%E7%A1%80/Figure/01-Map%E6%8E%A5%E5%8F%A3%E7%BB%A7%E6%89%BF%E5%85%B3%E7%B3%BB.png)
+![image-20200412085830424](/Users/hsfxuebao/Library/Application Support/typora-user-images/image-20200412085830424.png)
+
 1. [HashMap源码解读](https://juejin.im/post/5e4222b0518825492e494e19)   *********
 2. [为啥HashMap的默认容量是16？](https://juejin.im/post/5e7c2bbff265da42bc796f6e)
 3. [图解HashMap(一) ](https://juejin.im/post/5e7b47acf265da573d61cff5)  *********
@@ -40,13 +58,11 @@
 5. [图解LinkedHashMap原理](https://juejin.im/post/5e74c4016fb9a07ca601c97a)   *
 6. [LinkedHashMap源码解读](https://juejin.im/post/5e42242be51d4526c654b4e1)  
 7. [图解TreeMap](https://juejin.im/post/5e7b4f2a5188255e277a3a8e)   *
-8. [ConcurrentHashMap源码 ](https://juejin.im/post/5e421fc0e51d4526c5509f54)  *********
-9. [ConcurrentHashMap & HashTable](https://juejin.im/post/5e42249fe51d4526cc3b17f0)  
 10. [图解红黑树原理](https://juejin.im/post/5e7c18476fb9a009912d8b84) 
 
 ### 02-Collection
 
-![Collection](https://github.com/hsfxuebao/java-study/blob/master/src/main/01-Java基础/Figure/02-Collection继承关系图.png)
+![image-20200412085904184](/Users/hsfxuebao/Library/Application Support/typora-user-images/image-20200412085904184.png)
 
 #### 00-集合入门
 
@@ -68,36 +84,76 @@
 1. [解读 Java 并发队列 BlockingQueue](https://juejin.im/post/5e7b53d16fb9a07c951d045c) **
 2. PriorityQueue
 
-## 03-并发
-### 01-多线程
-1. [异步技巧之CompletableFuture](https://juejin.im/post/5e7abaaae51d452716052f86)  **
-2. [深入理解java中的线程](https://juejin.im/post/5e7c68c26fb9a009a52f54b2)
-3. [线程通信（CountDownLatch、CyclicBarrier、Semaphore）](https://juejin.im/post/5e7c6a94e51d455c7275d419)
-4. [Java并发 -- Fork/Join框架](https://juejin.im/post/5e527a8a6fb9a07c8a5a158b)
-5. [线程池execute和submit区别](https://juejin.im/post/5e5bb18ce51d45270b7d646c)
-6. [如何正确使用线程池submit和execute方法](https://juejin.im/post/5e72d6f66fb9a07cad3bbddf)
-7. [ThreadPoolExecutor八种拒绝策略浅析](https://juejin.im/post/5e34e0206fb9a02ff7297959)
-8. [诡异的并发之原子性](https://juejin.im/post/5e5db07cf265da574727969a)
-9. [理解Object的wait,notify,notifyAll与Thread的sleep,yield,join等方法](https://juejin.im/post/5e62fc3951882548ff3aa578)
-10. [线程池中的空余线程是如何被回收的](https://juejin.im/post/5e7221a3e51d4527235b7f67)
-11. [线程的中断(interrupt)机制](https://juejin.im/post/5e72d0b0f265da5735507150)
+## 03-并发编程
+### 01-并发编程的挑战
 
-### 02-锁
+1. [并发编程1-上下文切换和死锁](https://juejin.im/post/5e926a296fb9a03c840d6792)
 
-1. [Synchronized实现原理（方法代码块）](https://juejin.im/post/5e7c5c686fb9a009612de451)  *********
-2. [Synchronized及其实现原理](https://juejin.im/post/5e7485f1f265da570a5d69aa)
-3. [Monitor（管程）是什么意思？Java中Monitor（管程）的介绍](https://juejin.im/post/5e7c5e62e51d455c1d67b0e9)    *********
-4. [Synchronized锁升级](https://juejin.im/post/5e7adfc1f265da5770145cc2) *********
-5. [并发编程知识点（volatile、JMM、锁、CAS、阻塞队列、线程池、死锁）](https://juejin.im/post/5e7c6ec851882535f43973fe)
-6. [volatile 相关整理](https://juejin.im/post/5e522439e51d4526ff024ee9)
+### 02-并发机制的底层实现原理
+
+1. [volatile 相关整理](https://juejin.im/post/5e522439e51d4526ff024ee9)
+2. [并发面试知识点（volatile、JMM、锁、CAS、阻塞队列、线程池、死锁）](https://juejin.im/post/5e7c6ec851882535f43973fe)
+3. [Synchronized锁升级](https://juejin.im/post/5e7adfc1f265da5770145cc2) *********
+4. [Synchronized实现原理（方法代码块）](https://juejin.im/post/5e7c5c686fb9a009612de451)  *********
+5. [Synchronized及其实现原理](https://juejin.im/post/5e7485f1f265da570a5d69aa)
+6. [Monitor（管程）是什么意思？Java中Monitor（管程）的介绍](https://juejin.im/post/5e7c5e62e51d455c1d67b0e9)    *********
 7. [Java并发编程—并发流程控制与AQS原理及相关源码解析](https://juejin.im/post/5e551be0f265da572017ebd8#heading-25)
+8. [Java如何实现原子操作（CAS或锁）](https://juejin.im/post/5e927e68e51d4546e5570c06)
+9. [原子操作的实现原理](https://juejin.im/post/5e92d935f265da47b725e80a)
 
-### 03-ThreadLocal
+### 03-Java内存模型
 
-1. [并发容器之ThreadLocal](https://juejin.im/post/5e05789fe51d45584c554628)
-2. [从源码深入详解ThreadLocal内存泄漏问题](https://juejin.im/post/5e057453518825127424c0e0)
-3. [线程封闭](https://juejin.im/post/5e5e0f74e51d4526c3590685)
-4. [Random和ThreadLocalRandom区别](https://juejin.im/post/5e72f70ff265da573a021410)
+1. [Java内存模型](https://juejin.im/post/5e930ef6518825739f6b0f60)
+   - 重排序、final域、happens-before
+
+### 04-并发编程基础
+
+1. [Java并发基础-线程简介（状态、常用方法）](https://juejin.im/post/5e9304776fb9a03c3b2bcafe)join,sleep,yield方法等
+2. [理解Object的wait,notify,notifyAll与Thread的sleep,yield,join等方法](https://juejin.im/post/5e62fc3951882548ff3aa578)
+3. [线程的中断(interrupt)机制](https://juejin.im/post/5e72d0b0f265da5735507150)
+4. [深入理解java中的线程](https://juejin.im/post/5e7c68c26fb9a009a52f54b2)
+5. [诡异的并发之原子性](https://juejin.im/post/5e5db07cf265da574727969a)
+6. [Java并发基础-启动和终止线程](https://juejin.im/post/5e93069ee51d454709220c8c)
+7. [Java并发基础-线程间通信](https://juejin.im/post/5e930590f265da47b1779997) 
+   - wait，notify
+   - ThreadLocal
+8. [并发容器之ThreadLocal](https://juejin.im/post/5e05789fe51d45584c554628)
+9. [从源码深入详解ThreadLocal内存泄漏问题](https://juejin.im/post/5e057453518825127424c0e0)
+10. [线程封闭](https://juejin.im/post/5e5e0f74e51d4526c3590685)
+11. [Random和ThreadLocalRandom区别](https://juejin.im/post/5e72f70ff265da573a021410)
+
+### 05-Java中的锁
+
+1. [Java中的锁(Lock、重入锁、读写锁、队列同步器、Condition)](https://juejin.im/post/5e92dacce51d4546b50d474c#heading-7)
+
+### 06-并发容器及框架
+
+1. [ConcurrentHashMap1.7分段锁原理](https://juejin.im/post/5e929f02f265da47d6451baa)
+2. [ConcurrentHashMap1.8源码 ](https://juejin.im/post/5e421fc0e51d4526c5509f54)  *********
+3. [ConcurrentHashMap & HashTable](https://juejin.im/post/5e42249fe51d4526cc3b17f0)  
+4. [Java 中的阻塞队列](https://juejin.im/post/5e92d6b26fb9a03c6f66fef3)
+5. [ConcurrentLinkedQueue 的实现原理分析](https://juejin.im/post/5e92d745e51d45470125725e)
+6. [Java并发 -- Fork/Join框架](https://juejin.im/post/5e527a8a6fb9a07c8a5a158b)
+
+### 07-Java中的13个原子操作类
+
+1. [Java中的13个原子操作类](https://juejin.im/post/5e9302b2f265da47c4321d2f)
+
+### 08-并发工具类
+
+1. [（CountDownLatch、CyclicBarrier、Semaphore、Exchanger）](https://juejin.im/post/5e7c6a94e51d455c7275d419)
+
+### 09-线程池和Executor框架
+
+1. [JAVA 线程池的分析和使用](https://juejin.im/post/5e92d8b151882573bf179116)
+2. [ThreadPoolExecutor原理分析](https://juejin.im/post/5e929b53e51d4547134bdad5)
+3. [线程池execute和submit区别](https://juejin.im/post/5e5bb18ce51d45270b7d646c)
+4. [如何正确使用线程池submit和execute方法](https://juejin.im/post/5e72d6f66fb9a07cad3bbddf)
+5. [ThreadPoolExecutor八种拒绝策略浅析](https://juejin.im/post/5e34e0206fb9a02ff7297959)
+6. [异步技巧之CompletableFuture](https://juejin.im/post/5e7abaaae51d452716052f86)  **
+7. [线程池中的空余线程是如何被回收的](https://juejin.im/post/5e7221a3e51d4527235b7f67)
+
+
 
 ## 04-常用类
 
