@@ -5,39 +5,47 @@
 
 ### 01-内存和垃圾回收
 
-1. [JVM面试知识点（GC、参数、引用）](https://juejin.im/post/5e7c90c5f265da42cc3e1b24)
-2. [对象和数组并不是都是在堆上分配内存的](https://juejin.im/post/5e53961ff265da5740641f12)
-3. [JVM虚拟机CMS和G1收集器详解](https://juejin.im/post/5e43a766518825497467ea13)
-4. [JVM系列(一) - JVM总体概述](https://juejin.im/post/5e43abe9518825492b50a37c)
-5. [JVM系列(二) - JVM内存区域](https://juejin.im/post/5e4a4b7ef265da572c5485f4)
-6. [JVM系列(三) - JVM对象探秘](https://juejin.im/post/5e4b464a6fb9a07ccd518105)
-7. [JVM系列(四) - JVM类加载机制详解](https://juejin.im/post/5e4b4981f265da57697103d3)
-8. [JVM系列(五) - JVM垃圾回收算法](https://juejin.im/post/5e4cb4cbe51d4526c70fa545)
-9. [JVM系列(六) - JVM垃圾回收器](https://juejin.im/post/5e4cbafbe51d4526c550a601)
-10. [JVM系列(七) - JVM线上监控工具](https://juejin.im/post/5e4cbb98e51d4526f65cbdad)
+1. [JVM系列1-JVM总体概述](https://juejin.im/post/5e43abe9518825492b50a37c)
+2. [JVM与Java体系结构](https://juejin.im/post/5e8e934be51d4546b4351079)
+3. [JVM系列2-JVM内存区域与内存溢出异常](https://juejin.im/post/5e4a4b7ef265da572c5485f4)
+4. [JVM-运行时数据区（栈和程序计数器）](https://juejin.im/post/5e8edda45188257394723c74)
+5. [JVM系列3- JVM对象探秘](https://juejin.im/post/5e4b464a6fb9a07ccd518105)
+6. [JVM系列4-垃圾收集器与内存分配策略](https://juejin.im/post/5e944e24e51d4546e64c6eb4)
+   - 判断无用对象、垃圾收集算法和垃圾收集器、内存分配策略
+7. [JVM垃圾回收器](https://juejin.im/post/5e4cbafbe51d4526c550a601)
+8. [JVM面试知识点（GC、参数、引用）](https://juejin.im/post/5e7c90c5f265da42cc3e1b24)
+9. [对象和数组并不是都是在堆上分配内存的](https://juejin.im/post/5e53961ff265da5740641f12)
+10. [JVM虚拟机CMS和G1收集器详解](https://juejin.im/post/5e43a766518825497467ea13)
 11. [《深入理解Java虚拟机》第2版挖的坑终于在第3版中被R大填平了](https://juejin.im/post/5e4a46c8518825496452a9e2)
 12. [并发的可达性分析](https://juejin.im/post/5e63ab6251882549165423a1)
 13. [Java堆内存是线程共享的！面试官：你确定吗？](https://juejin.im/post/5e66f59f6fb9a07cde64e6da)
 
 
 
-强烈推荐：
-
-1. [JVM(一)-JVM与Java体系结构](https://juejin.im/post/5e8e934be51d4546b4351079)
-2. [JVM(二)-类加载子系统](https://juejin.im/post/5e8d6c1a6fb9a03c840d60ef)
-3. [JVM(三)-运行时数据区（栈和程序计数器）](https://juejin.im/post/5e8edda45188257394723c74)
-
 ### 02-字节码与类加载
+
+1. [JVM系列5-类文件结构](https://juejin.im/post/5e9450daf265da47ed17f8e7)
+2. [JVM系列6 - JVM类加载机制详解](https://juejin.im/post/5e4b4981f265da57697103d3)
+3. [JVM-类加载子系统](https://juejin.im/post/5e8d6c1a6fb9a03c840d60ef)
+4. [JVM系列7-虚拟机字节码执行引擎](https://juejin.im/post/5e9451bdf265da47da2adb60)
+5. []()
+6. []()
 
 ### 03-性能监控和调优
 
-1. [JDK监控和故障处理工具揭秘](https://juejin.im/post/5e43a7e051882549417fbcf9)
-2. [阿里巴巴开源的 Java 诊断工具Arthas【入门篇】](https://juejin.im/post/5e537a1be51d4526d0595347)
-3. [cpu使用率过高和jvm old占用过高排查过程](https://juejin.im/post/5e74174ce51d4527196d7708)
+1. [JVM系列 - JVM线上监控工具](https://juejin.im/post/5e4cbb98e51d4526f65cbdad)
+2. [JDK监控和故障处理工具揭秘](https://juejin.im/post/5e43a7e051882549417fbcf9)
+3. [阿里巴巴开源的 Java 诊断工具Arthas【入门篇】](https://juejin.im/post/5e537a1be51d4526d0595347)
+4. [cpu使用率过高和jvm old占用过高排查过程](https://juejin.im/post/5e74174ce51d4527196d7708)
 
+### 04-程序编译与代码优化
 
+1. [JVM系列8-前端编译与优化](https://juejin.im/post/5e94530b51882573991599be)
+   - 泛型、自动装拆箱
+2. [JVM系列9-后端编译与优化](https://juejin.im/post/5e953ad7f265da47bb7007e3)
+   - 解释器、即时编译器、逃逸分析
 
-### 04-推荐书籍
+### 05-推荐书籍
 
 1. Java虚拟机规范（Java SE 8版）
 2. 深入理解Java虚拟机（第三版）
@@ -47,44 +55,9 @@
 6. 实战Java虚拟机（JVM故障诊断与性能优化）
 7. Java虚拟机精讲
 
-## 02-集合
-### 01-Map
-![image-20200412085830424](/Users/hsfxuebao/Library/Application Support/typora-user-images/image-20200412085830424.png)
+​    链接:https://pan.baidu.com/s/1a3Tq6gEuf_A8XKlM2rKdMw  密码:l74y
 
-1. [HashMap源码解读](https://juejin.im/post/5e4222b0518825492e494e19)   *********
-2. [为啥HashMap的默认容量是16？](https://juejin.im/post/5e7c2bbff265da42bc796f6e)
-3. [图解HashMap(一) ](https://juejin.im/post/5e7b47acf265da573d61cff5)  *********
-4. [图解HashMap(二)](https://juejin.im/post/5e7b48c46fb9a07cdb469e66)   *********
-5. [图解LinkedHashMap原理](https://juejin.im/post/5e74c4016fb9a07ca601c97a)   *
-6. [LinkedHashMap源码解读](https://juejin.im/post/5e42242be51d4526c654b4e1)  
-7. [图解TreeMap](https://juejin.im/post/5e7b4f2a5188255e277a3a8e)   *
-10. [图解红黑树原理](https://juejin.im/post/5e7c18476fb9a009912d8b84) 
-
-### 02-Collection
-
-![image-20200412085904184](/Users/hsfxuebao/Library/Application Support/typora-user-images/image-20200412085904184.png)
-
-#### 00-集合入门
-
-1. [Java容器集合之入门](https://juejin.im/post/5e422053e51d4526e262749e)
-
-#### 01-Set
-
-1. HashSet
-2. TreeSet
-
-#### 02-List
-
-1. [ArrayList源码](https://juejin.im/post/5e422191518825492c04f68f)  *********
-2. [Vector & LinkedList源码](https://juejin.im/post/5e422204e51d4526e418f39b)  *********
-3. Stack
-
-#### 03-Queue
-
-1. [解读 Java 并发队列 BlockingQueue](https://juejin.im/post/5e7b53d16fb9a07c951d045c) **
-2. PriorityQueue
-
-## 03-并发编程
+## 02-并发编程
 ### 01-并发编程的挑战
 
 1. [并发编程1-上下文切换和死锁](https://juejin.im/post/5e926a296fb9a03c840d6792)
@@ -108,7 +81,9 @@
 
 ### 04-并发编程基础
 
-1. [Java并发基础-线程简介（状态、常用方法）](https://juejin.im/post/5e9304776fb9a03c3b2bcafe)join,sleep,yield方法等
+1. [Java并发基础-线程简介（状态、常用方法）](https://juejin.im/post/5e9304776fb9a03c3b2bcafe)
+   - join,sleep,yield方法等
+   - 守护线程
 2. [理解Object的wait,notify,notifyAll与Thread的sleep,yield,join等方法](https://juejin.im/post/5e62fc3951882548ff3aa578)
 3. [线程的中断(interrupt)机制](https://juejin.im/post/5e72d0b0f265da5735507150)
 4. [深入理解java中的线程](https://juejin.im/post/5e7c68c26fb9a009a52f54b2)
@@ -153,7 +128,58 @@
 6. [异步技巧之CompletableFuture](https://juejin.im/post/5e7abaaae51d452716052f86)  **
 7. [线程池中的空余线程是如何被回收的](https://juejin.im/post/5e7221a3e51d4527235b7f67)
 
+### 10-推荐书籍
 
+1. Java并发编程的艺术
+
+2. Java多线程编程核心技术
+
+   - 第2章：volatile、synchronized常用Demo
+
+   - 第3章：线程间通信（wait、notify、join）
+
+   - 第4章：Lock、Condition
+
+     
+
+## 03-Java基础
+
+### 01-集合
+
+#### 01-Map
+
+![image-20200412085830424](file:///Users/hsfxuebao/Library/Application%20Support/typora-user-images/image-20200412085830424.png?lastModify=1586786299)
+
+1. [HashMap源码解读](https://juejin.im/post/5e4222b0518825492e494e19)   ***\******
+2. [为啥HashMap的默认容量是16？](https://juejin.im/post/5e7c2bbff265da42bc796f6e)
+3. [图解HashMap(一) ](https://juejin.im/post/5e7b47acf265da573d61cff5)  ***\******
+4. [图解HashMap(二)](https://juejin.im/post/5e7b48c46fb9a07cdb469e66)   ***\******
+5. [图解LinkedHashMap原理](https://juejin.im/post/5e74c4016fb9a07ca601c97a)   *
+6. [LinkedHashMap源码解读](https://juejin.im/post/5e42242be51d4526c654b4e1)  
+7. [图解TreeMap](https://juejin.im/post/5e7b4f2a5188255e277a3a8e)   *
+8. [图解红黑树原理](https://juejin.im/post/5e7c18476fb9a009912d8b84) 
+
+#### 02-Collection
+
+![image-20200412085904184](file:///Users/hsfxuebao/Library/Application%20Support/typora-user-images/image-20200412085904184.png?lastModify=1586786299)
+
+1. [Java容器集合之入门](https://juejin.im/post/5e422053e51d4526e262749e)
+
+   #### 01-Set
+
+   1. [HashSet源码解读](https://juejin.im/post/5e93debae51d4546fd4819dd)
+   2. TreeSet
+
+   #### 02-List
+
+   1. [ArrayList源码](https://juejin.im/post/5e422191518825492c04f68f)  ***\******
+   2. [Vector & LinkedList源码](https://juejin.im/post/5e422204e51d4526e418f39b)  ***\******
+   3. Stack
+
+   #### 03-Queue
+
+   1. [解读 Java 并发队列 BlockingQueue](https://juejin.im/post/5e7b53d16fb9a07c951d045c) **
+   2. PriorityQueue
 
 ## 04-常用类
 
@@ -170,10 +196,33 @@
 
 ## 06-Java8特性
 
-1. [了解lambda及函数式接口](https://juejin.im/post/5e14879e5188253a9c440f1d)
-2. [建议你使用LocalDateTime](https://juejin.im/post/5d7787625188252388753eae)
-3. [Java8日期和时间API](https://juejin.im/post/5e52250fe51d45271355161e)
-4. [Java Stream 相关操作](https://juejin.im/post/5e526912f265da5709701da1)
+### 01-为什么选择Java8
+
+1. [Java8实战-为什么关心Java8](https://juejin.im/post/5e942d2a6fb9a03c8c04183e)
+2. [Java8实战-通过行为参数化传递代码](https://juejin.im/post/5e942dce51882573b2196057)
+3. [Java8实战-Lambda表达式](https://juejin.im/post/5e942e18f265da480a1ab71a)
+
+### 02-函数式数据处理
+
+1. [Java8实战-引入流（Stream）](https://juejin.im/post/5e942e92518825739a1b04a9)
+2. [Java8实战-使用Stream](https://juejin.im/post/5e942ff851882573be11cb3b)
+3. [Java8实战-用流收集数据](https://juejin.im/post/5e9430a351882573b136a580)
+4. [Java8实战-并行数据处理与性能](https://juejin.im/post/5e94315351882573bf17931f)
+5. [了解lambda及函数式接口](https://juejin.im/post/5e14879e5188253a9c440f1d)
+6. [Java Stream 相关操作](https://juejin.im/post/5e526912f265da5709701da1)
+
+### 03-高效编程
+
+1. [Java8实战-重构、测试和调试](https://juejin.im/post/5e9431c06fb9a03c5a7aa341)
+2. [Java8实战-默认方法](https://juejin.im/post/5e943219e51d45471a1cccf6)
+3. [Java8实战-用Optional取代null](https://juejin.im/post/5e94326ae51d4546b50d4966)
+4. [Java8实战-CompletableFuture：组合式异步编程](https://juejin.im/post/5e941783e51d4546f36a4d0e)
+5. [Java8实战-新的日期和时间API](https://juejin.im/post/5e9432f16fb9a03c387f44c4)
+6. [玩转 CompletableFuture 异步编程](https://juejin.im/post/5e942b96e51d4546f36a4d44)
+7. [建议你使用LocalDateTime](https://juejin.im/post/5d7787625188252388753eae)
+8. [Java8日期和时间API](https://juejin.im/post/5e52250fe51d45271355161e)
+
+
 
 ## 07-其他
 
