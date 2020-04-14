@@ -165,21 +165,21 @@
 
 1. [Java容器集合之入门](https://juejin.im/post/5e422053e51d4526e262749e)
 
-   #### 01-Set
+2. [HashSet源码解读](https://juejin.im/post/5e93debae51d4546fd4819dd)
 
-   1. [HashSet源码解读](https://juejin.im/post/5e93debae51d4546fd4819dd)
-   2. TreeSet
+3. TreeSet
 
-   #### 02-List
+4. [ArrayList源码](https://juejin.im/post/5e422191518825492c04f68f)  ***\******
 
-   1. [ArrayList源码](https://juejin.im/post/5e422191518825492c04f68f)  ***\******
-   2. [Vector & LinkedList源码](https://juejin.im/post/5e422204e51d4526e418f39b)  ***\******
-   3. Stack
+5. [Vector & LinkedList源码](https://juejin.im/post/5e422204e51d4526e418f39b)  ***\******
 
-   #### 03-Queue
+6. Stack
 
-   1. [解读 Java 并发队列 BlockingQueue](https://juejin.im/post/5e7b53d16fb9a07c951d045c) **
-   2. PriorityQueue
+7. [解读 Java 并发队列 BlockingQueue](https://juejin.im/post/5e7b53d16fb9a07c951d045c) **
+
+8. PriorityQueue
+
+   
 
 ## 04-常用类
 
