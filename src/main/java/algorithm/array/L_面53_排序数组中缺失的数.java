@@ -17,7 +17,7 @@ package algorithm.array;
  * 链接：https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class L_面53_中缺失的数 {
+public class L_面53_排序数组中缺失的数 {
 
 	public static Integer getDiff(int[] arr) {
 
