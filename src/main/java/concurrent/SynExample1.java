@@ -1,6 +1,6 @@
 package concurrent;
 
-public class Example1 {
+public class SynExample1 {
     //1.创建共享变量
     private static boolean flag = true;
 

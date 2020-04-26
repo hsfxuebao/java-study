@@ -22,6 +22,14 @@
             <version>23.0</version>
         </dependency>
 
+        <!--分析Java对象头Mark Word-->
+        <dependency>
+            <groupId>org.openjdk.jol</groupId>
+            <artifactId>jol-core</artifactId>
+            <version>0.9</version>
+        </dependency>
+
+
     </dependencies>
 
 </project>
