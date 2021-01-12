@@ -1,6 +1,8 @@
 # java-study
 包含Java基础,MySQL,Spring,SpringBoot,算法等知识点
 
+1. [Java研发（个人）常用软件](https://juejin.cn/post/6844904151088906248)
+
 
 
 

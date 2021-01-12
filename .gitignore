@@ -36,3 +36,4 @@ nbdist/
 .kube/
 .med/
 *rebel.xml
+.puml

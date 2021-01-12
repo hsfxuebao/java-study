@@ -1,5 +1,9 @@
 package concurrent;
 
+import java.util.HashMap;
+
+import com.google.common.collect.Maps;
+
 /**
  * @author haoshaofei
  * @date 2020/04/12
@@ -15,6 +19,8 @@ public class DeadLockDemo {
 
 	public static void main(String[] args) {
 		new DeadLockDemo().deadLock();
+		final HashMap<Object, Object> map =
+				Maps.newHashMap();
 	}
 
 	private void deadLock() {
