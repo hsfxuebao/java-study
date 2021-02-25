@@ -7,8 +7,12 @@ import java.time.ZoneId;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
-import java.time.temporal.TemporalUnit;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 import java.util.TimeZone;
+import java.util.stream.Collectors;
+
 
 /**
  * @author haoshaofei
@@ -17,6 +21,38 @@ import java.util.TimeZone;
 public class StringTest {
 
 	public static void main(String[] args) {
+
+
+		List<User> lists = new ArrayList<User>();
+		for (int i = 0; i < 4; i++) {
+			User user = new User();
+			user.setNumber(i);
+			user.setAge(5-i);
+			lists.add(user);
+		}
+		User user1 = new User();
+		user1.setAge(3);
+		user1.setNumber(3);
+		lists.add(user1);
+		User user2 = new User();
+		user2.setAge(3);
+		user2.setNumber(1);
+		lists.add(user2);
+
+//		lists.add(3);
+//		lists.add(2);
+//		lists.add(1);
+//		lists.add(4);
+//		lists.add(5);
+//		lists.add(6);
+//		lists.add(8);
+//		lists.add(7);
+		final List<User> collect = lists.stream().sorted(Comparator.comparingInt(User::getNumber).reversed().thenComparing(User::getAge)).limit(5).collect(Collectors.toList());
+		for (User user : collect) {
+			System.out.println(user);
+		}
+
+
 
 		//2：string的intern使用
 		//s1是基本类型，比较值。s2是string实例，比较实例地址

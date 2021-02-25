@@ -68,3 +68,7 @@
 5. [Kafka保证消息不丢失不重复](https://juejin.im/post/5e6f1d0d51882549422ef337)
 6. [2020年最新面试真题（1）：为什么使用消息队列？](https://juejin.im/post/5e71c11351882549422ef719)
 
+## 08-kafka源码分析
+
+1. [Kafka源码分析准备](https://juejin.cn/post/6920929202925469709/)
+2. 

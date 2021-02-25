@@ -5,6 +5,20 @@
 
 
 
+## 01-Java面试题
+
+1. [Java面试季一](https://juejin.cn/post/6918624458253008910)
+2. [ JUC面试题一](https://juejin.cn/post/6918625731455123463/)
+3. [集合框架一](https://juejin.cn/post/6918631929277317133/)
+4. [ 集合框架二](https://juejin.cn/editor/drafts/6918632045723779086)
+5. [多线程和锁](https://juejin.cn/post/6918632693022326797/)
+6. [队列和线程池](https://juejin.cn/post/6918634491682488327/)
+7. [JVM与GC一](https://juejin.cn/post/6918636230729007112/)
+8. [JVM与GC二](https://juejin.cn/post/6918636834239184904/)
+9. [Java字符串常量池+两数之和](https://juejin.cn/post/6918638332155002894)
+10. [可重入锁(递归锁)+LockSupport+AQS源码分析](https://juejin.cn/post/6918638310491439111)
+11. []()
+
 
 
 

@@ -70,6 +70,15 @@
 13. [java应用监测(8)-阿里诊断工具arthas](https://juejin.im/post/6893390122729865223/)
 14. [Java应用监控（9）-NMT堆外内存分析1](https://juejin.cn/post/6912320591231975438/)
 15. [Java应用监控（9）-NMT堆外内存分析2](https://juejin.cn/post/6912321579816845320)
+16. [JVM20-JVM调优概述](https://juejin.cn/post/6931699254557671437/)
+17. [JVM21-监控及诊断工具-命令行篇](https://juejin.cn/post/6931972953311707144/)
+18. [JVM22-监控及诊断工具-GUI篇(上)](https://juejin.cn/post/6933010123019255822)
+    - Jconsole、Visual VM、MAT
+19. []()
+
+
+
+
 
 ### 1.4-程序编译与代码优化
 
@@ -314,16 +323,23 @@
 
 #### 4.Effective Java 第三版
 
-第二章 创建和销毁对象
+##### 目录
 
-[1. 考虑使用静态工厂方法替代构造方法](https://juejin.im/post/5ecfb347f265da76b93ba094)
- [2. 当构造方法参数过多时使用builder模式](https://juejin.im/post/5ecfb658e51d457b3d081ac3)
- [3. 使用私有构造方法或枚类实现Singleton属性](https://juejin.im/post/5ecfb7656fb9a047ec3f910a)
- [4. 使用私有构造方法执行非实例化](https://juejin.im/post/5ecfb8766fb9a0480067c4dc)
+1. [Effective Java 第二章 创建和销毁对象](https://juejin.im/post/5ecfb347f265da76b93ba094)
+2. [Effective Java 第三章 所有对象通用的方法](https://juejin.cn/post/6844904173910097933/)
+3. [Effective Java 第四章 类和接口](https://juejin.cn/post/6844904173914292232/)
+4. [Effective Java 第四章 类和接口二](https://juejin.cn/post/6917555797371125773/)
+5. [ Effective Java 第五章 泛型(1)](https://juejin.cn/post/6917567184336060424/#heading-3)
+6. [Effective Java 第五章 泛型(2)](https://juejin.cn/post/6917579720460763150/)
+7. [Effective Java 第六章 枚举和注解](https://juejin.cn/post/6917791494690570254/)
+8. [ Effective Java 第七章 Lambda表达式和Stream流](https://juejin.cn/post/6918699557194825741/#heading-1)
+9. [Effective Java 第九章 通用编程一](https://juejin.cn/post/6920196556155650062/)
+10. [Effective Java 第九章 通用编程二](https://juejin.cn/post/6920383272488796168/)
+11. [Effective Java 第十章 异常](https://juejin.cn/post/6920391310339735560/)
+12. [Effective Java 第十一章 并发](https://juejin.cn/post/6920544050890145800/)
+13. [Effective Java 第十二章 序列化](https://juejin.cn/post/6920545771745968136/)
 
 
-
- 
 
 ## 04-Java8特性
 
