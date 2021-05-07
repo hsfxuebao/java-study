@@ -21,21 +21,21 @@
 14. [JVM13-垃圾回收算法](https://juejin.cn/post/6913075734055485453/)
 15. [JVM14-垃圾回收相关概念](https://juejin.cn/post/6913076126953209864/)
 16. [JVM15-垃圾回收器详解](https://juejin.cn/post/6913076250688880654/)
-17. 
-
-1. [JVM系列1-JVM总体概述](https://juejin.im/post/5e43abe9518825492b50a37c)
-2. [JVM系列2-JVM内存区域与内存溢出异常](https://juejin.im/post/5e4a4b7ef265da572c5485f4)
-3. [JVM-运行时数据区（栈和程序计数器）](https://juejin.im/post/5e8edda45188257394723c74)
-4. [JVM系列3- JVM对象探秘](https://juejin.im/post/5e4b464a6fb9a07ccd518105)
-5. [JVM系列4-垃圾收集器与内存分配策略](https://juejin.im/post/5e944e24e51d4546e64c6eb4)
-   - 判断无用对象、垃圾收集算法和垃圾收集器、内存分配策略
-6. [JVM垃圾回收器](https://juejin.im/post/5e4cbafbe51d4526c550a601)
-7. [JVM面试知识点（GC、参数、引用）](https://juejin.im/post/5e7c90c5f265da42cc3e1b24)
-8. [对象和数组并不是都是在堆上分配内存的](https://juejin.im/post/5e53961ff265da5740641f12)
-9. [JVM虚拟机CMS和G1收集器详解](https://juejin.im/post/5e43a766518825497467ea13)
-10. [《深入理解Java虚拟机》第2版挖的坑终于在第3版中被R大填平了](https://juejin.im/post/5e4a46c8518825496452a9e2)
-11. [并发的可达性分析](https://juejin.im/post/5e63ab6251882549165423a1)
-12. [Java堆内存是线程共享的！面试官：你确定吗？](https://juejin.im/post/5e66f59f6fb9a07cde64e6da)
+17. [三色标记法与读写屏障](https://juejin.cn/post/6942661513236709412/#heading-11)
+18. 
+19. [JVM系列1-JVM总体概述](https://juejin.im/post/5e43abe9518825492b50a37c)
+20. [JVM系列2-JVM内存区域与内存溢出异常](https://juejin.im/post/5e4a4b7ef265da572c5485f4)
+21. [JVM-运行时数据区（栈和程序计数器）](https://juejin.im/post/5e8edda45188257394723c74)
+22. [JVM系列3- JVM对象探秘](https://juejin.im/post/5e4b464a6fb9a07ccd518105)
+23. [JVM系列4-垃圾收集器与内存分配策略](https://juejin.im/post/5e944e24e51d4546e64c6eb4)
+    - 判断无用对象、垃圾收集算法和垃圾收集器、内存分配策略
+24. [JVM垃圾回收器](https://juejin.im/post/5e4cbafbe51d4526c550a601)
+25. [JVM面试知识点（GC、参数、引用）](https://juejin.im/post/5e7c90c5f265da42cc3e1b24)
+26. [对象和数组并不是都是在堆上分配内存的](https://juejin.im/post/5e53961ff265da5740641f12)
+27. [JVM虚拟机CMS和G1收集器详解](https://juejin.im/post/5e43a766518825497467ea13)
+28. [《深入理解Java虚拟机》第2版挖的坑终于在第3版中被R大填平了](https://juejin.im/post/5e4a46c8518825496452a9e2)
+29. [并发的可达性分析](https://juejin.im/post/5e63ab6251882549165423a1)
+30. [Java堆内存是线程共享的！面试官：你确定吗？](https://juejin.im/post/5e66f59f6fb9a07cde64e6da)
 
 
 
@@ -52,6 +52,11 @@
 9. [JVM系列7-虚拟机字节码执行引擎](https://juejin.im/post/5e9451bdf265da47da2adb60)
 10. []()
 11. []()
+
+#### 1.2.2 字节码增强
+
+1. [Java字节码增强探秘](https://juejin.cn/post/6943581366479454221/)
+2. [Java动态追踪技术探究](https://juejin.cn/post/6943890723192193055)
 
 ### 1.3-性能监控和调优
 
@@ -131,7 +136,6 @@
 4. [Synchronized实现原理（方法代码块）](https://juejin.im/post/5e7c5c686fb9a009612de451)  *********
 5. [Synchronized及其实现原理](https://juejin.im/post/5e7485f1f265da570a5d69aa)
 6. [Monitor（管程）是什么意思？Java中Monitor（管程）的介绍](https://juejin.im/post/5e7c5e62e51d455c1d67b0e9)    *********
-7. [Java并发编程—并发流程控制与AQS原理及相关源码解析](https://juejin.im/post/5e551be0f265da572017ebd8#heading-25)
 8. [Java如何实现原子操作（CAS或锁）](https://juejin.im/post/5e927e68e51d4546e5570c06)
 9. [原子操作的实现原理](https://juejin.im/post/5e92d935f265da47b725e80a)
 
@@ -146,38 +150,77 @@
    - join,sleep,yield方法等
    - 守护线程
 2. [理解Object的wait,notify,notifyAll与Thread的sleep,yield,join等方法](https://juejin.im/post/5e62fc3951882548ff3aa578)
-3. [线程的中断(interrupt)机制](https://juejin.im/post/5e72d0b0f265da5735507150)
-4. [深入理解java中的线程](https://juejin.im/post/5e7c68c26fb9a009a52f54b2)
-5. [诡异的并发之原子性](https://juejin.im/post/5e5db07cf265da574727969a)
-6. [Java并发基础-启动和终止线程](https://juejin.im/post/5e93069ee51d454709220c8c)
-7. [Java并发基础-线程间通信](https://juejin.im/post/5e930590f265da47b1779997) 
+3. [Java中wait()方法为什么要放在同步块中？](https://juejin.cn/post/6940235242653351944/)
+4. [线程的中断(interrupt)机制](https://juejin.im/post/5e72d0b0f265da5735507150)
+5. [深入理解java中的线程](https://juejin.im/post/5e7c68c26fb9a009a52f54b2)
+6. [诡异的并发之原子性](https://juejin.im/post/5e5db07cf265da574727969a)
+7. [Java并发基础-启动和终止线程](https://juejin.im/post/5e93069ee51d454709220c8c)
+8. [Java并发基础-线程间通信](https://juejin.im/post/5e930590f265da47b1779997) 
    - wait，notify
    - ThreadLocal
-8. [并发容器之ThreadLocal](https://juejin.im/post/5e05789fe51d45584c554628)
-9. [从源码深入详解ThreadLocal内存泄漏问题](https://juejin.im/post/5e057453518825127424c0e0)
-10. [线程封闭](https://juejin.im/post/5e5e0f74e51d4526c3590685)
-11. [Random和ThreadLocalRandom区别](https://juejin.im/post/5e72f70ff265da573a021410)
-12. [多线程下的ThreadLocalRandom用法](https://juejin.im/post/6863713733252743182/)
-13. [Netty 源码！FastThreadLocal 究竟快在哪里？](https://juejin.cn/post/6898675188907753479/)
-14. [FastThreadLocal吞吐量居然是ThreadLocal的3倍！！！](https://juejin.cn/post/6898675286351544334/)
+9. [并发容器之ThreadLocal](https://juejin.im/post/5e05789fe51d45584c554628)
+10. [从源码深入详解ThreadLocal内存泄漏问题](https://juejin.im/post/5e057453518825127424c0e0)
+11. [线程封闭](https://juejin.im/post/5e5e0f74e51d4526c3590685)
+12. [Random和ThreadLocalRandom区别](https://juejin.im/post/5e72f70ff265da573a021410)
+13. [多线程下的ThreadLocalRandom用法](https://juejin.im/post/6863713733252743182/)
+14. [Netty 源码！FastThreadLocal 究竟快在哪里？](https://juejin.cn/post/6898675188907753479/)
+15. [FastThreadLocal吞吐量居然是ThreadLocal的3倍！！！](https://juejin.cn/post/6898675286351544334/)
 
 ### 2.5-Java中的锁
 
 1. [Java中的锁(Lock、重入锁、读写锁、队列同步器、Condition)](https://juejin.im/post/5e92dacce51d4546b50d474c#heading-7)
 2. [AQS源码分析（上） -- AQS原理分析](https://juejin.cn/post/6897865242148077575/)
 3. [AQS源码分析（中） -- ReentrantLock上锁源码解析](https://juejin.cn/post/6897866067163480077/)
-4. [AQS-ReentrantLock加锁源码分析](https://juejin.cn/post/6897867067530477575/)
 5. [AQS源码分析（下） -- ReentrantLock解锁源码解析](https://juejin.cn/post/6897867046718177294/)
-6. 
+
+  #### 2.5.1 JUC锁源码分析
+
+1. [Unsafe 与 LockSupport](https://juejin.cn/post/6941631478988505125/)
+2. [自旋锁&CLH锁&MCS锁](https://juejin.cn/post/6942092279528046599/)
+3. [AQS原理和 Condition Queue（上）(基于Java 8)](https://juejin.cn/post/6941540893274931214)
+4. [AQS原理和 Sync Queue（下）(基于Java 8)](https://juejin.cn/post/6941326019421405220)
+5. [Condition 源码分析 (基于Java 8)](https://juejin.cn/post/6941639506881675300/)
+6. [ReentrantLock 源码分析 (基于Java 8)](https://juejin.cn/post/6941175066180714527)
+7. [CountDownLatch 源码分析 (基于Java 8)](https://juejin.cn/post/6941549744061841415/)
+8. [CyclicBarrier 源码分析 (基于Java 8)](https://juejin.cn/post/6941642952703737864/)
+9. [Semaphore 源码分析 (基于Java 8)](https://juejin.cn/post/6941649346223931428/)
+10. [ReentrantReadWriteLock 源码分析(基于Java 8)](https://juejin.cn/post/6942074971074068517/)
+11. [Java并发编程—并发流程控制与AQS原理及相关源码解析](https://juejin.im/post/5e551be0f265da572017ebd8#heading-25)
+12. [ Phaser源码分析](https://juejin.cn/post/6947846820584226853/)
+13. [ StampedLock源码分析](https://juejin.cn/post/6947847477861023781/)
 
 ### 2.6-并发容器及框架
 
+1.  
+4. [Java 中的阻塞队列](https://juejin.im/post/5e92d6b26fb9a03c6f66fef3)
+6. [Java并发 -- Fork/Join框架](https://juejin.im/post/5e527a8a6fb9a07c8a5a158b)
+
+#### 2.6.1 JUC集合源码分析
+
 1. [ConcurrentHashMap1.7分段锁原理](https://juejin.im/post/5e929f02f265da47d6451baa)
 2. [ConcurrentHashMap1.8源码 ](https://juejin.im/post/5e421fc0e51d4526c5509f54)  *********
-3. [ConcurrentHashMap & HashTable](https://juejin.im/post/5e42249fe51d4526cc3b17f0)  
-4. [Java 中的阻塞队列](https://juejin.im/post/5e92d6b26fb9a03c6f66fef3)
-5. [ConcurrentLinkedQueue 的实现原理分析](https://juejin.im/post/5e92d745e51d45470125725e)
-6. [Java并发 -- Fork/Join框架](https://juejin.im/post/5e527a8a6fb9a07c8a5a158b)
+3. [ConcurrentHashMap & HashTable](https://juejin.im/post/5e42249fe51d4526cc3b17f0) 
+4. [CopyOnWriteArrayList 源码分析 (基于Java 8)](https://juejin.cn/post/6946747020757434404)
+   - CopyOnWriteArraySet同理
+5. [ConcurrentSkipListMap 源码分析 (基于Java 8)](https://juejin.cn/post/6945619278859075598/)
+   - ConcurrentSkipListSet同理
+6. [ConcurrentLinkedQueue 的实现原理分析](https://juejin.im/post/5e92d745e51d45470125725e)
+7. [ConcurrentLinkedQueue 源码分析 (基于Java 8)](https://juejin.cn/post/6945332096193789966/)
+8. [ConcurrentLinkedDeque源码分析](https://juejin.cn/post/6947857915533328421/)
+
+#### 2.6.2 阻塞队列源码分析
+
+1. [ArrayBlockingQueue源码分析 (基于Java 8)](https://juejin.cn/post/6946827577424248839)
+2. [LinkedBlockingQueue 源码分析 (基于Java 8)](https://juejin.cn/post/6947114064040427533)
+3. [PriorityBlockingQueue 源码分析(基于Java 8)](https://juejin.cn/post/6947116378415431688)
+4. [DelayQueue源码分析(基于Java8)](https://juejin.cn/post/6947120442188496903)
+5. [SynchronousQueue 源码分析 (基于Java 8)](https://juejin.cn/post/6946748386288599047)
+6. [LinkedTransferQueue源码分析(基于Java8)](https://juejin.cn/post/6947122160255270919)
+7. [ LinkedBlockingDeque源码分析(基于Java8)](https://juejin.cn/post/6947986164263452703/)
+8. [DelayedWorkQueue源码分析(基于Java8)]()
+9. []()
+
+
 
 ### 2.7-Java中的13个原子操作类
 
@@ -196,6 +239,17 @@
 5. [ThreadPoolExecutor八种拒绝策略浅析](https://juejin.im/post/5e34e0206fb9a02ff7297959)
 6. [异步技巧之CompletableFuture](https://juejin.im/post/5e7abaaae51d452716052f86)  **
 7. [线程池中的空余线程是如何被回收的](https://juejin.im/post/5e7221a3e51d4527235b7f67)
+
+#### 2.9.1 线程池源码分析
+
+1. [线程池篇(0)-线程池框架](https://juejin.cn/post/6947990667893145614/)
+2. [线程池篇(1)-ThreadPoolExecutor](https://juejin.cn/post/6948384763006681124/)
+3. [线程池篇(2)-FutureTask 源码分析 (基于Java 8)](https://juejin.cn/post/6942288770150596622/)
+4. [线程池篇(3)-DelayedWorkQueue源码分析]()
+5. [线程池篇(3)-ScheduledThreadPoolExecutor](https://juejin.cn/post/6948964401084907556)
+6. [线程池篇(4)-ForkJoinPool - 1](https://juejin.cn/post/6948970003148308511/)
+7. [线程池篇(5)-ForkJoinPool - 2](https://juejin.cn/post/6948970264575082526/)
+8. [线程池篇(6)-ForkJoinPool - 3](https://juejin.cn/post/6948970383424880676/)
 
 ### 2.10-推荐书籍
 
@@ -244,20 +298,18 @@
 
 #### 3.4.1-Map
 
-![image-20200412085830424](file:///Users/hsfxuebao/Library/Application%20Support/typora-user-images/image-20200412085830424.png?lastModify=1586786299)
-
 1. [HashMap源码解读](https://juejin.im/post/5e4222b0518825492e494e19)   ***\******
 2. [为啥HashMap的默认容量是16？](https://juejin.im/post/5e7c2bbff265da42bc796f6e)
 3. [图解HashMap(一) ](https://juejin.im/post/5e7b47acf265da573d61cff5)  ***\******
 4. [图解HashMap(二)](https://juejin.im/post/5e7b48c46fb9a07cdb469e66)   ***\******
+
+   - hashMap死循环
 5. [图解LinkedHashMap原理](https://juejin.im/post/5e74c4016fb9a07ca601c97a)   *
 6. [LinkedHashMap源码解读](https://juejin.im/post/5e42242be51d4526c654b4e1)  
 7. [图解TreeMap](https://juejin.im/post/5e7b4f2a5188255e277a3a8e)   *
 8. [图解红黑树原理](https://juejin.im/post/5e7c18476fb9a009912d8b84) 
 
 #### 3.4.2-Collection
-
-![image-20200412085904184](file:///Users/hsfxuebao/Library/Application%20Support/typora-user-images/image-20200412085904184.png?lastModify=1586786299)
 
 1. [Java容器集合之入门](https://juejin.im/post/5e422053e51d4526e262749e)
 

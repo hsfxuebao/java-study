@@ -35,7 +35,7 @@ public class SemaphoreDemo {
                 e.printStackTrace();
             }
             System.out.println(Thread.currentThread().getName() + "释放了许可证");
-            semaphore.release(2);
+            semaphore.release(3);
         }
     }
 }

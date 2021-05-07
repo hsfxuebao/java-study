@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Agent-Class: jvm.agent.asm.TestAgent
+Created-By: hsfxuebao
+Can-Redefine-Classes: true
+Can-Retransform-Classes: true
+Boot-Class-Path: javassist-3.25.0-GA.jar
+Main-Class: jvm.agent.asm.TestAgent
+

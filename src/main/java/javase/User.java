@@ -9,6 +9,7 @@ public class User {
     private int number;
     private int age;
 
+
     public int getNumber() {
         return number;
     }
