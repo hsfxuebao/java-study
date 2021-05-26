@@ -72,4 +72,14 @@
 ## 08-kafka源码分析
 
 1. [Kafka源码分析准备](https://juejin.cn/post/6920929202925469709/)
-2. 
+2. [Kafka 源码解析之高性能架构（零）](https://juejin.cn/post/6964183129384812581/)
+3. [Kafka 源码解析之 Producer 发送模型（一）](https://juejin.cn/post/6963058177428422692/)
+4. [Kafka 源码解析之 Producer Metadata 更新机制（二）](https://juejin.cn/post/6963432540942106655)
+5. [Kafka 源码解析之 topic 创建过程（三）](https://juejin.cn/post/6963806904866832421/)
+6. [Linux IO模式及 select、poll、epoll详解](https://juejin.cn/post/6963810338240200717/)
+7. [Kafka 源码解析之 Producer NIO 网络模型（四）](https://juejin.cn/post/6964340216387600391)
+8. [Kafka 源码解析之 Producer 单 Partition 顺序性实现及配置说明（五）](https://juejin.cn/post/6965420812958433294/)
+9. [Kafka 源码解析之 Producer必掌握知识（六）](https://juejin.cn/post/6965423924259749896/)
+10. []()
+11. []()
+

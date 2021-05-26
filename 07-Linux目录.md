@@ -70,13 +70,28 @@
 1. [每天一个linux命令（40）：ifconfig命令](https://juejin.cn/post/6959516769191100453/)
 2. [每天一个linux命令（41）：route命令](https://juejin.cn/post/6959517232216932389/)
 3. [ 每天一个linux命令（42）：ping命令](https://juejin.cn/post/6959521862976012301/)
-4. []()
-5. []()
-6. []()
-7. []()
-8. []()
+4. [每天一个linux命令（43）：traceroute命令](https://juejin.cn/post/6959526881809039390/)
+5. [每天一个linux命令（44）：netstat命令](https://juejin.cn/post/6959529037043597320/)
+6. [每天一个linux命令（45）：ss命令](https://juejin.cn/post/6959532868993286151/)
+7. [每天一个linux命令（46）：telnet命令](https://juejin.cn/post/6959712873052373029/)
+8. [每天一个linux命令（47）：rcp命令](https://juejin.cn/post/6959712201493970981/)
+9. [每天一个linux命令（48）：scp命令](https://juejin.cn/post/6959715937712865288/)
+10. [ 每天一个linux命令（61）：wget命令](https://juejin.cn/post/6959897805590626311/)
 
 ### 1.9 其他命令
+
+1. [每天一个linux命令（49）：ln 命令](https://juejin.cn/post/6959723996308832292/)
+2. [每天一个linux命令（50）：date命令](https://juejin.cn/post/6959725202171232263)
+3. [每天一个linux命令（51）：cal 命令](https://juejin.cn/post/6959726680319950856/)
+4. [每天一个linux命令（52）：diff 命令](https://juejin.cn/post/6959728574165319694/)
+5. [每天一个linux命令（53）：grep 命令](https://juejin.cn/post/6959887204139139079/)
+6. [每天一个linux命令（54）：wc命令](https://juejin.cn/post/6959889345335525412/)
+7. [每天一个linux命令（55）：ps命令](https://juejin.cn/post/6959891728916545567/)
+8. [每天一个linux命令（56）：watch命令](https://juejin.cn/post/6959893241273679908/)
+9. [每天一个linux命令（57）：at命令](https://juejin.cn/post/6959894068243464206/)
+10. [每天一个linux命令（58）：crontab命令](https://juejin.cn/post/6959895164936519694/)
+11. [每天一个linux命令（59）：kill命令](https://juejin.cn/post/6959895862193422343/)
+12. [每天一个linux命令（60）：killall命令](https://juejin.cn/post/6959897340844965918)
 
 
 
