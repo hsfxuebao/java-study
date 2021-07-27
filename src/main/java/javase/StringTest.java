@@ -1,5 +1,6 @@
 package javase;
 
+import java.math.BigDecimal;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -13,6 +14,8 @@ import java.util.List;
 import java.util.TimeZone;
 import java.util.stream.Collectors;
 
+import cn.hutool.core.codec.Base32;
+
 
 /**
  * @author haoshaofei
@@ -22,6 +25,11 @@ public class StringTest {
 
 	public static void main(String[] args) {
 
+		final int i1 = new BigDecimal("40").multiply(new BigDecimal("0.0392"))
+				.setScale(0, BigDecimal.ROUND_DOWN).intValue();
+		System.out.println(i1);
+
+		System.out.println(Long.toUnsignedString(32, 32));
 
 		List<User> lists = new ArrayList<User>();
 		for (int i = 0; i < 4; i++) {
