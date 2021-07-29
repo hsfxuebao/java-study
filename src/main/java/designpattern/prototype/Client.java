@@ -4,8 +4,8 @@ public class Client {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//��ͳ�ķ���
-		Sheep sheep = new Sheep("tom", 1, "��ɫ");
+		//
+		Sheep sheep = new Sheep("tom", 1, "白色");
 		
 		Sheep sheep2 = new Sheep(sheep.getName(), sheep.getAge(), sheep.getColor());
 		Sheep sheep3 = new Sheep(sheep.getName(), sheep.getAge(), sheep.getColor());

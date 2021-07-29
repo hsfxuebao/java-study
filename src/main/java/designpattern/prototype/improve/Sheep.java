@@ -7,8 +7,8 @@ public class Sheep implements Cloneable {
 	private String name;
 	private int age;
 	private String color;
-	private String address = "�ɹ���";
-	public Sheep friend; //�Ƕ���, ��¡�ǻ���δ���
+	private String address = "蒙古羊";
+	public Sheep friend; // 是对象，克隆是会如何处理，默认是浅拷贝
 	public Sheep(String name, int age, String color) {
 		super();
 		this.name = name;
@@ -40,7 +40,7 @@ public class Sheep implements Cloneable {
 	public String toString() {
 		return "Sheep [name=" + name + ", age=" + age + ", color=" + color + ", address=" + address + "]";
 	}
-	//��¡��ʵ����ʹ��Ĭ�ϵ�clone���������
+	// 使用clone方法来完成
 	@Override
 	protected Object clone()  {
 		
