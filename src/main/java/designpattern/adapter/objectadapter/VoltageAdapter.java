@@ -1,12 +1,12 @@
 package designpattern.adapter.objectadapter;
 
-//��������
+//适配器类
 public class VoltageAdapter  implements IVoltage5V {
 
-	private Voltage220V voltage220V; // ������ϵ-�ۺ�
+	private Voltage220V voltage220V; // 关联关系-聚合
 	
 	
-	//ͨ��������������һ�� Voltage220V ʵ��
+	//ͨ构造器
 	public VoltageAdapter(Voltage220V voltage220v) {
 		
 		this.voltage220V = voltage220v;
@@ -19,10 +19,10 @@ public class VoltageAdapter  implements IVoltage5V {
 		
 		int dst = 0;
 		if(null != voltage220V) {
-			int src = voltage220V.output220V();//��ȡ220V ��ѹ
-			System.out.println("ʹ�ö�������������������~~");
+			int src = voltage220V.output220V();//获取220V的电压
+			System.out.println("使用对象适配器  进行适配");
 			dst = src / 44;
-			System.out.println("������ɣ�����ĵ�ѹΪ=" + dst);
+			System.out.println("适配完成  输出的电压为=" + dst);
 		}
 		
 		return dst;

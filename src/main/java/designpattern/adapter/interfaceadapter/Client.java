@@ -8,7 +8,8 @@ public class Client {
 			@Override
 			public void m1() {
 				// TODO Auto-generated method stub
-				System.out.println("ʹ����m1�ķ���");
+
+				System.out.println("使用m1的方法");
 			}
 		};
 		
