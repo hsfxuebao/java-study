@@ -3,7 +3,7 @@ package jvm;
 import java.time.LocalDateTime;
 
 /**
- * @author haoshaofei <haoshaofei@kuaishou.com>
+ * @author haoshaofei
  * Created on 2020-08-12
  */
 public class Test1 {

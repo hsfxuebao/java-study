@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 /**
- * @author haoshaofei <haoshaofei@kuaishou.com>
+ * @author haoshaofei
  * Created on 2021-02-23
  *
  * -Xms500m -Xmx500m -XX:SurvivorRatio=8

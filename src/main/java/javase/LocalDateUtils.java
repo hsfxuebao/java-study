@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.ZoneOffset;
 
 /**
- * @author haoshaofei <haoshaofei@kuaishou.com>
+ * @author haoshaofei
  * Created on 2021-04-15
  */
 public class LocalDateUtils {

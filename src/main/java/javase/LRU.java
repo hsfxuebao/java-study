@@ -7,7 +7,7 @@ import java.util.Map.Entry;
 import com.sun.jmx.snmp.SnmpTooBigException;
 
 /**
- * @author haoshaofei <haoshaofei@kuaishou.com>
+ * @author haoshaofei
  * Created on 2020-12-05
  */
 public class LRU extends LinkedHashMap<String, String> {

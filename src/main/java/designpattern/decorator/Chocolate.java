@@ -1,12 +1,12 @@
 package designpattern.decorator;
 
-//�����Decorator�� ������ǵ�ζƷ
+//具体的Decorator 这里是调味品
 public class Chocolate extends Decorator {
 
 	public Chocolate(Drink obj) {
 		super(obj);
-		setDes(" �ɿ��� ");
-		setPrice(3.0f); // ��ζƷ �ļ۸�
+		setDes(" 千克力 ");
+		setPrice(3.0f); // 价格
 	}
 
 }

@@ -1,7 +1,7 @@
 package jvm.agent.asm;
 
 /**
- * @author haoshaofei <haoshaofei@kuaishou.com>
+ * @author haoshaofei
  * Created on 2021-03-24
  */
 public class MyTest {

@@ -9,7 +9,7 @@ import org.apache.commons.lang3.SerializationUtils;
 
 
 /**
- * @author haoshaofei <haoshaofei@kuaishou.com>
+ * @author haoshaofei
  * Created on 2021-03-10
  */
 public class StreamTest {

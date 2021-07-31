@@ -3,7 +3,7 @@ package designpattern.factory.application;
 import java.util.Calendar;
 
 /**
- * @author haoshaofei <haoshaofei@kuaishou.com>
+ * @author haoshaofei
  * Created on 2021-07-28
  */
 public class FactoryJdk {
