@@ -5,16 +5,16 @@ import java.util.List;
 
 public class College extends OrganizationComponent {
 
-	//List �� ��ŵ�Department
+	//List 里面包含  Department
 	List<OrganizationComponent> organizationComponents = new ArrayList<OrganizationComponent>();
 
-	// ������
+	// 构造器
 	public College(String name, String des) {
 		super(name, des);
 		// TODO Auto-generated constructor stub
 	}
 
-	// ��дadd
+	// add
 	@Override
 	protected void add(OrganizationComponent organizationComponent) {
 		// TODO Auto-generated method stub
@@ -22,7 +22,7 @@ public class College extends OrganizationComponent {
 		organizationComponents.add(organizationComponent);
 	}
 
-	// ��дremove
+	// remove
 	@Override
 	protected void remove(OrganizationComponent organizationComponent) {
 		// TODO Auto-generated method stub
@@ -41,12 +41,12 @@ public class College extends OrganizationComponent {
 		return super.getDes();
 	}
 
-	// print�������������University ������ѧԺ
+	// print方法 学院里面包含专业
 	@Override
 	protected void print() {
 		// TODO Auto-generated method stub
 		System.out.println("--------------" + getName() + "--------------");
-		//���� organizationComponents 
+		// organizationComponents
 		for (OrganizationComponent organizationComponent : organizationComponents) {
 			organizationComponent.print();
 		}

@@ -5,24 +5,23 @@ public class Client {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		//�Ӵ�С�������� ѧУ
-		OrganizationComponent university = new University("�廪��ѧ", " �й�������ѧ ");
+		// 从大到小创建对象 学校
+		OrganizationComponent university = new University("清华大学", " 清华大学 ");
 		
-		//���� ѧԺ
-		OrganizationComponent computerCollege = new College("�����ѧԺ", " �����ѧԺ ");
-		OrganizationComponent infoEngineercollege = new College("��Ϣ����ѧԺ", " ��Ϣ����ѧԺ ");
+		//学院
+		OrganizationComponent computerCollege = new College("计算机学院", " 计算机学院 ");
+		OrganizationComponent infoEngineercollege = new College("信息工程学院", "信息工程学院");
 		
 		
 		//��������ѧԺ�����ϵ(רҵ)
-		computerCollege.add(new Department("�������", " ������̲��� "));
-		computerCollege.add(new Department("���繤��", " ���繤�̲��� "));
-		computerCollege.add(new Department("�������ѧ�뼼��", " �������ѧ�뼼�������Ƶ�רҵ "));
-		
+		computerCollege.add(new Department("计算机专业", "计算机专业"));
+		computerCollege.add(new Department("软件工程", " 软件工程 "));
+
 		//
-		infoEngineercollege.add(new Department("ͨ�Ź���", " ͨ�Ź��̲���ѧ "));
-		infoEngineercollege.add(new Department("��Ϣ����", " ��Ϣ���̺�ѧ "));
+		infoEngineercollege.add(new Department("ͨ通信工程", "ͨ通信工程"));
+		infoEngineercollege.add(new Department("信息工程", "信息工程"));
 		
-		//��ѧԺ���뵽 ѧУ
+		//将学院加入学校
 		university.add(computerCollege);
 		university.add(infoEngineercollege);
 		

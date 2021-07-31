@@ -2,7 +2,7 @@ package designpattern.composite;
 
 public class Department extends OrganizationComponent {
 
-	//û�м���
+	// 没有集合
 	
 	public Department(String name, String des) {
 		super(name, des);
@@ -10,7 +10,7 @@ public class Department extends OrganizationComponent {
 	}
 
 	
-	//add , remove �Ͳ���д�ˣ���Ϊ����Ҷ�ӽڵ�
+	//add , remove 就不用写了，因为他就是叶子节点
 	
 	@Override
 	public String getName() {
