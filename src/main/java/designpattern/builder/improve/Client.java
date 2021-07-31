@@ -3,22 +3,22 @@ package designpattern.builder.improve;
 public class Client {
 	public static void main(String[] args) {
 		
-		//����ͨ����
+		//盖普通房子
 		CommonHouse commonHouse = new CommonHouse();
-		//׼���������ӵ�ָ����
+		// 准备创建房子的指挥者
 		HouseDirector houseDirector = new HouseDirector(commonHouse);
 		
-		//��ɸǷ��ӣ����ز�Ʒ(��ͨ����)
+		//完成盖房子，返回产品，房子
 		House house = houseDirector.constructHouse();
 		
-		//System.out.println("�������");
+		//System.out.println("输出流程");
 		
 		System.out.println("--------------------------");
-		//�Ǹ�¥
+		//盖高楼
 		HighBuilding highBuilding = new HighBuilding();
-		//���ý�����
+		//重置建造者
 		houseDirector.setHouseBuilder(highBuilding);
-		//��ɸǷ��ӣ����ز�Ʒ(��¥)
+		//完成盖高楼，返回产品
 		houseDirector.constructHouse();
 		
 		

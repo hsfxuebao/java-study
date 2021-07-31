@@ -1,6 +1,6 @@
 package designpattern.builder.improve;
 
-//��Ʒ->Product
+//产品->Product
 public class House {
 	private String baise;
 	private String wall;
