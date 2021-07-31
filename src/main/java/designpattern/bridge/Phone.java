@@ -2,10 +2,10 @@ package designpattern.bridge;
 
 public abstract class Phone {
 	
-	//���Ʒ��
+	//品牌 组合
 	private Brand brand;
 
-	//������
+	//构造器
 	public Phone(Brand brand) {
 		super();
 		this.brand = brand;

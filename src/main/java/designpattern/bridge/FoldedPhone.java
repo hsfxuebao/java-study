@@ -11,16 +11,16 @@ public class FoldedPhone extends Phone {
 	
 	public void open() {
 		super.open();
-		System.out.println(" �۵���ʽ�ֻ� ");
+		System.out.println(" ֱ折叠样式手机 ");
 	}
 	
 	public void close() {
 		super.close();
-		System.out.println(" �۵���ʽ�ֻ� ");
+		System.out.println("ֱ折叠样式手机");
 	}
 	
 	public void call() {
 		super.call();
-		System.out.println(" �۵���ʽ�ֻ� ");
+		System.out.println(" ֱ折叠样式手机 ");
 	}
 }
