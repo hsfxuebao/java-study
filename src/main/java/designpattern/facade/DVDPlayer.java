@@ -2,7 +2,7 @@ package designpattern.facade;
 
 public class DVDPlayer {
 	
-	//ʹ�õ���ģʽ, ʹ�ö���ʽ
+	// 饿汉模式
 	private static DVDPlayer instance = new DVDPlayer();
 	
 	public static DVDPlayer getInstanc() {

@@ -2,7 +2,7 @@ package designpattern.facade;
 
 public class HomeTheaterFacade {
 	
-	//���������ϵͳ����
+	//定义各个子系统对象
 	private TheaterLight theaterLight;
 	private Popcorn popcorn;
 	private Stereo stereo;
@@ -11,7 +11,7 @@ public class HomeTheaterFacade {
 	private DVDPlayer dVDPlayer;
 	
 	
-	//������
+	//构造器
 	public HomeTheaterFacade() {
 		super();
 		this.theaterLight = TheaterLight.getInstance();
@@ -22,7 +22,7 @@ public class HomeTheaterFacade {
 		this.dVDPlayer = DVDPlayer.getInstanc();
 	}
 
-	//�����ֳ� 4 ��
+	//操作分为4步
 	
 	public void ready() {
 		popcorn.on();
