@@ -2,11 +2,9 @@ package designpattern.command;
 
 public class TVOnCommand implements Command {
 
-	// �ۺ�TVReceiver
-
+	// 组合 TVReceiver
 	TVReceiver tv;
 
-	// ������
 	public TVOnCommand(TVReceiver tv) {
 		super();
 		this.tv = tv;
@@ -15,14 +13,12 @@ public class TVOnCommand implements Command {
 	@Override
 	public void execute() {
 		// TODO Auto-generated method stub
-		// ���ý����ߵķ���
 		tv.on();
 	}
 
 	@Override
 	public void undo() {
 		// TODO Auto-generated method stub
-		// ���ý����ߵķ���
 		tv.off();
 	}
 }

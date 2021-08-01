@@ -2,11 +2,10 @@ package designpattern.command;
 
 public class LightOnCommand implements Command {
 
-	//�ۺ�LightReceiver
+	//组合LightReceiver
 	
 	LightReceiver light;
 	
-	//������
 	public LightOnCommand(LightReceiver light) {
 		super();
 		this.light = light;
@@ -15,7 +14,7 @@ public class LightOnCommand implements Command {
 	@Override
 	public void execute() {
 		// TODO Auto-generated method stub
-		//���ý����ߵķ���
+		//调用接收者的方法
 		light.on();
 	}
 
@@ -24,7 +23,7 @@ public class LightOnCommand implements Command {
 	@Override
 	public void undo() {
 		// TODO Auto-generated method stub
-		//���ý����ߵķ���
+		// 调用接收者的方法
 		light.off();
 	}
 
