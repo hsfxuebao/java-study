@@ -2,12 +2,11 @@ package designpattern.observer.improve;
 
 public class CurrentConditions implements Observer {
 
-	// �¶ȣ���ѹ��ʪ��
+	// 温度 气压 湿度
 	private float temperature;
 	private float pressure;
 	private float humidity;
 
-	// ���� ������������� WeatherData �����ã���ʹ������ģʽ
 	public void update(float temperature, float pressure, float humidity) {
 		this.temperature = temperature;
 		this.pressure = pressure;
@@ -15,7 +14,6 @@ public class CurrentConditions implements Observer {
 		display();
 	}
 
-	// ��ʾ
 	public void display() {
 		System.out.println("***Today mTemperature: " + temperature + "***");
 		System.out.println("***Today mPressure: " + pressure + "***");

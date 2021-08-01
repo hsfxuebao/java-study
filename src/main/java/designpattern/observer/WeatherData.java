@@ -1,10 +1,10 @@
 package designpattern.observer;
 
 /**
- * ���Ǻ���
- * 1. �������µ����������Ϣ 
- * 2. ���� CurrentConditions ����
- * 3. �������и���ʱ���������ĵ���   CurrentConditions����update����(�� display), �������ǣ����뷽���Ϳ������µ���Ϣ
+ * 类是核心
+ * 1. 包含最细的天气情况信息
+ * 2. 含有 CurrentConditions 信息
+ * 3.  当有数据更新时 就主动调用 CurrentConditions  的 update（）
  * @author Administrator
  *
  */
@@ -13,7 +13,7 @@ public class WeatherData {
 	private float pressure;
 	private float humidity;
 	private CurrentConditions currentConditions;
-	//�����µĵ�����
+	// 加入新第三方
 
 	public WeatherData(CurrentConditions currentConditions) {
 		this.currentConditions = currentConditions;
@@ -32,16 +32,16 @@ public class WeatherData {
 	}
 
 	public void dataChange() {
-		//���� ���뷽�� update
+		//update
 		currentConditions.update(getTemperature(), getPressure(), getHumidity());
 	}
 
-	//�������и���ʱ���͵��� setData
+	// 有数据更新 setData
 	public void setData(float temperature, float pressure, float humidity) {
 		this.temperatrue = temperature;
 		this.pressure = pressure;
 		this.humidity = humidity;
-		//����dataChange�� �����µ���Ϣ ���͸� ���뷽 currentConditions
+		// 调用 dataChange 将新的天气情况推送给 接入方 currentConditions
 		dataChange();
 	}
 }

@@ -3,21 +3,19 @@ package designpattern.observer.improve;
 import java.util.ArrayList;
 
 /**
- * ���Ǻ���
- * 1. �������µ����������Ϣ 
- * 2. ���� �۲��߼��ϣ�ʹ��ArrayList����
- * 3. �������и���ʱ���������ĵ���   ArrayList, ֪ͨ���еģ����뷽���Ϳ������µ���Ϣ
- * @author Administrator
+ * 类是核心
+ * 1. 包含最细的天气信息
+ * 2. 含有观察者集合  使用List 管理
+ * 3. 当数据有更新时，就主动调用 List 通知所有的接入者
  *
  */
 public class WeatherData implements Subject {
 	private float temperatrue;
 	private float pressure;
 	private float humidity;
-	//�۲��߼���
+	// 观察者集合
 	private ArrayList<Observer> observers;
 	
-	//�����µĵ�����
 
 	public WeatherData() {
 		observers = new ArrayList<Observer>();
@@ -36,12 +34,12 @@ public class WeatherData implements Subject {
 	}
 
 	public void dataChange() {
-		//���� ���뷽�� update
+		// 调用接入方 的 update
 		
 		notifyObservers();
 	}
 
-	//�������и���ʱ���͵��� setData
+	// 当数据有更新时，就调用 setData
 	public void setData(float temperature, float pressure, float humidity) {
 		this.temperatrue = temperature;
 		this.pressure = pressure;
@@ -50,14 +48,14 @@ public class WeatherData implements Subject {
 		dataChange();
 	}
 
-	//ע��һ���۲���
+	// 注册
 	@Override
 	public void registerObserver(Observer o) {
 		// TODO Auto-generated method stub
 		observers.add(o);
 	}
 
-	//�Ƴ�һ���۲���
+	// 删除
 	@Override
 	public void removeObserver(Observer o) {
 		// TODO Auto-generated method stub
@@ -66,7 +64,7 @@ public class WeatherData implements Subject {
 		}
 	}
 
-	//�������еĹ۲��ߣ���֪ͨ
+	// 遍历所有的观察者，并通知
 	@Override
 	public void notifyObservers() {
 		// TODO Auto-generated method stub

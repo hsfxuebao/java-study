@@ -1,6 +1,6 @@
 package designpattern.observer.improve;
 
-//�۲��߽ӿڣ��й۲�����ʵ��
+// 观察者接口  由观察者实现
 public interface Observer {
 
 	public void update(float temperature, float pressure, float humidity);
