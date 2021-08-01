@@ -2,9 +2,9 @@ package designpattern.visitor;
 
 public abstract class Action {
 	
-	//�õ����� �Ĳ���
+	// 得到男性的评价
 	public abstract void getManResult(Man man);
 	
-	//�õ�Ů�� ����
+	// 得到女性的评价
 	public abstract void getWomanResult(Woman woman);
 }

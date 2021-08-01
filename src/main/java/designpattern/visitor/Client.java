@@ -4,14 +4,14 @@ public class Client {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//����ObjectStructure
+		//ObjectStructure
 		ObjectStructure objectStructure = new ObjectStructure();
 		
 		objectStructure.attach(new Man());
 		objectStructure.attach(new Woman());
 		
 		
-		//�ɹ�
+		// 成功
 		Success success = new Success();
 		objectStructure.display(success);
 		
@@ -19,7 +19,7 @@ public class Client {
 		Fail fail = new Fail();
 		objectStructure.display(fail);
 		
-		System.out.println("=======�����Ǵ����Ĳ���========");
+		System.out.println("=======给的待定评价========");
 		
 		Wait wait = new Wait();
 		objectStructure.display(wait);
