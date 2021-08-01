@@ -5,9 +5,9 @@ import java.util.Iterator;
 
 public class ComputerCollegeIterator implements Iterator {
 
-	//����������ҪDepartment ���������ķ�ʽ���=>����
+	// department 已怎样的形式存放-数组
 	Department[] departments;
-	int position = 0; //������λ��
+	int position = 0; //遍历的位置
 	
 	
 	
@@ -16,7 +16,7 @@ public class ComputerCollegeIterator implements Iterator {
 		this.departments = departments;
 	}
 
-	//�ж��Ƿ�����һ��Ԫ��
+	// 判断是否还有下一个元素
 	@Override
 	public boolean hasNext() {
 		// TODO Auto-generated method stub
@@ -36,7 +36,7 @@ public class ComputerCollegeIterator implements Iterator {
 		return department;
 	}
 	
-	//ɾ���ķ�����Ĭ�Ͽ�ʵ��
+	// 删除一个元素
 	public void remove() {
 		
 	}

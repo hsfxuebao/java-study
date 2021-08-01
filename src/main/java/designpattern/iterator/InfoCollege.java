@@ -11,15 +11,14 @@ public class InfoCollege implements College {
 	
 	public InfoCollege() {
 		departmentList = new ArrayList<Department>();
-		addDepartment("��Ϣ��ȫרҵ", " ��Ϣ��ȫרҵ ");
-		addDepartment("���簲ȫרҵ", " ���簲ȫרҵ ");
-		addDepartment("��������ȫרҵ", " ��������ȫרҵ ");
+		addDepartment("信息安全专业", " 信息安全专业 ");
+		addDepartment("网络安全专业", " 网络安全专业 ");
 	}
 	
 	@Override
 	public String getName() {
 		// TODO Auto-generated method stub
-		return "��Ϣ����ѧԺ";
+		return "信息工程学院";
 	}
 
 	@Override

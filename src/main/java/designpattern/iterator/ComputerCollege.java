@@ -5,14 +5,14 @@ import java.util.Iterator;
 public class ComputerCollege implements College {
 
 	Department[] departments;
-	int numOfDepartment = 0 ;// ���浱ǰ����Ķ������
+	int numOfDepartment = 0 ;// 保存当前数组的对象个数
 	
 	
 	public ComputerCollege() {
 		departments = new Department[5];
-		addDepartment("Javaרҵ", " Javaרҵ ");
-		addDepartment("PHPרҵ", " PHPרҵ ");
-		addDepartment("������רҵ", " ������רҵ ");
+		addDepartment("Java专业", " Java专业 ");
+		addDepartment("PHP专业", " PHP专业 ");
+		addDepartment("大数据专业", "大数据专业");
 		
 	}
 	
@@ -20,7 +20,7 @@ public class ComputerCollege implements College {
 	@Override
 	public String getName() {
 		// TODO Auto-generated method stub
-		return "�����ѧԺ";
+		return "计算机学院";
 	}
 
 	@Override

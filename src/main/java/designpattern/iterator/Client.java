@@ -7,7 +7,7 @@ public class Client {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//����ѧԺ
+		// 创建学院
 		List<College> collegeList = new ArrayList<College>();
 		
 		ComputerCollege computerCollege = new ComputerCollege();

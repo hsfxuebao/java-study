@@ -5,29 +5,29 @@ import java.util.List;
 
 public class OutPutImpl {
 	
-	//ѧԺ����
+	// 学院集合
 	List<College> collegeList;
 
 	public OutPutImpl(List<College> collegeList) {
 		
 		this.collegeList = collegeList;
 	}
-	//��������ѧԺ,Ȼ�����printDepartment �������ѧԺ��ϵ
+	// 遍历所有学院，调用printDepartment 输出各个学院的专业
 	public void printCollege() {
 		
-		//��collegeList ȡ������ѧԺ, Java �е� List �Ѿ�ʵ��Iterator
+		//
 		Iterator<College> iterator = collegeList.iterator();
 		
 		while(iterator.hasNext()) {
-			//ȡ��һ��ѧԺ
+			// 去除一个学院
 			College college = iterator.next();
 			System.out.println("=== "+college.getName() +"=====" );
-			printDepartment(college.createIterator()); //�õ���Ӧ������
+			printDepartment(college.createIterator()); // 得到对应的迭代器
 		}
 	}
 	
 	
-	//��� ѧԺ��� ϵ
+	// 输出每一个学院的所有系
 	
 	public void printDepartment(Iterator iterator) {
 		while(iterator.hasNext()) {
