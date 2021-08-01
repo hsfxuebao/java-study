@@ -5,7 +5,7 @@ public class PureSoyaMilk extends SoyaMilk{
 	@Override
 	void addCondiments() {
 		// TODO Auto-generated method stub
-		//��ʵ��
+		//
 	}
 	
 	@Override
