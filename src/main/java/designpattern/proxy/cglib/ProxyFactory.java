@@ -8,35 +8,35 @@ import net.sf.cglib.proxy.MethodProxy;
 
 public class ProxyFactory implements MethodInterceptor {
 
-	//ά��һ��Ŀ�����
+	// 维护一个目标对象
 	private Object target;
 	
-	//������������һ��������Ķ���
+	//构造器
 	public ProxyFactory(Object target) {
 		this.target = target;
 	}
 
-	//����һ���������:  �� target ����Ĵ������
+	//返回代理对象  是target的代理对象
 	public Object getProxyInstance() {
-		//1. ����һ��������
+		//1. 创建一个工具类
 		Enhancer enhancer = new Enhancer();
-		//2. ���ø���
+		//2.设置父类
 		enhancer.setSuperclass(target.getClass());
-		//3. ���ûص�����
+		//3. 设置回调函数
 		enhancer.setCallback(this);
-		//4. ����������󣬼��������
+		//4. 创建子类对象，即代理对象
 		return enhancer.create();
 		
 	}
 	
 
-	//��д  intercept �����������Ŀ�����ķ���
+	//重写 intercept  会调用目标对象的方法
 	@Override
 	public Object intercept(Object arg0, Method method, Object[] args, MethodProxy arg3) throws Throwable {
 		// TODO Auto-generated method stub
-		System.out.println("Cglib����ģʽ ~~ ��ʼ");
+		System.out.println("Cglib 代理模式开始。。");
 		Object returnVal = method.invoke(target, args);
-		System.out.println("Cglib����ģʽ ~~ �ύ");
+		System.out.println("Cglib 代理模式提交。。");
 		return returnVal;
 	}
 

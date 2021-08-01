@@ -1,8 +1,8 @@
 package designpattern.proxy.staticproxy;
 
 
-//�ӿ�
+// 接口
 public interface ITeacherDao {
 	
-	void teach(); // �ڿεķ���
+	void teach(); // 授课的方法
 }
