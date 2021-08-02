@@ -2,7 +2,7 @@ package designpattern.memento.theory;
 
 public class Originator {
 
-	private String state;//״̬��Ϣ
+	private String state;// 状态信息
 
 	public String getState() {
 		return state;
@@ -12,13 +12,12 @@ public class Originator {
 		this.state = state;
 	}
 	
-	//��дһ�����������Ա���һ��״̬���� Memento
-	//��˱�дһ������������ Memento
+	// 一个方法  可以保存一个状态 对象Memento
 	public Memento saveStateMemento() {
 		return new Memento(state);
 	}
 	
-	//ͨ������¼���󣬻ָ�״̬
+	//ͨ 通过备忘录对象 恢复状态
 	public void getStateFromMemento(Memento memento) {
 		state = memento.getState();
 	}

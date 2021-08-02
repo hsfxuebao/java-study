@@ -1,10 +1,10 @@
 package designpattern.mediator.smarthouse;
 
 public abstract class Mediator {
-	//�����н��߶��󣬼��뵽������
+	// 将给中介者对象  加入到集合中
 	public abstract void Register(String colleagueName, Colleague colleague);
 
-	//������Ϣ, �����ͬ�¶��󷢳�
+	// 接收消息， 具体同事对象发出
 	public abstract void GetMessage(int stateChange, String colleagueName);
 
 	public abstract void SendMessage();

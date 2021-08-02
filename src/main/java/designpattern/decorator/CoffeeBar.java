@@ -1,5 +1,8 @@
 package designpattern.decorator;
 
+/**
+ * 装饰模式
+ */
 public class CoffeeBar {
 
 	public static void main(String[] args) {

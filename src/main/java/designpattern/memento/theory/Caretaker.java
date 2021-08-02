@@ -5,14 +5,14 @@ import java.util.List;
 
 public class Caretaker {
 	
-	//��List �����л��кܶ�ı���¼����
+	// List 中很多的备忘录对象
 	private List<Memento> mementoList = new ArrayList<Memento>();
 	
 	public void add(Memento memento) {
 		mementoList.add(memento);
 	}
 	
-	//��ȡ����index��Originator �� ����¼����(������״̬)
+	// 获取到第index 个 的备忘录对象
 	public Memento get(int index) {
 		return mementoList.get(index);
 	}

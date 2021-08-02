@@ -1,5 +1,8 @@
 package designpattern.observer;
 
+/**
+ * 观察者模式
+ */
 public class Client {
 	public static void main(String[] args) {
 		//创建 currentConditions

@@ -1,5 +1,8 @@
 package designpattern.composite;
 
+/**
+ * 组合模式
+ */
 public class Client {
 
 	public static void main(String[] args) {
@@ -13,7 +16,6 @@ public class Client {
 		OrganizationComponent infoEngineercollege = new College("信息工程学院", "信息工程学院");
 		
 		
-		//��������ѧԺ�����ϵ(רҵ)
 		computerCollege.add(new Department("计算机专业", "计算机专业"));
 		computerCollege.add(new Department("软件工程", " 软件工程 "));
 

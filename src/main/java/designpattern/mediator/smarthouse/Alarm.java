@@ -1,13 +1,12 @@
 package designpattern.mediator.smarthouse;
 
-//�����ͬ����
+// 具体的同事类
 public class Alarm extends Colleague {
 
-	//������
 	public Alarm(Mediator mediator, String name) {
 		super(mediator, name);
 		// TODO Auto-generated constructor stub
-		//�ڴ���Alarm ͬ�¶���ʱ�����Լ����뵽ConcreteMediator ������[����]
+		// 创建Alarm 对象，同事将自己放入 Mediator对象中
 		mediator.Register(name, this);
 	}
 
@@ -18,7 +17,7 @@ public class Alarm extends Colleague {
 	@Override
 	public void SendMessage(int stateChange) {
 		// TODO Auto-generated method stub
-		//���õ��н��߶����getMessage
+		//调用中介者对象的 getMessage
 		this.GetMediator().GetMessage(stateChange, this.name);
 	}
 

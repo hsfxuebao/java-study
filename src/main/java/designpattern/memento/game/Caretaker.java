@@ -1,16 +1,15 @@
 package designpattern.memento.game;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-
-//�ػ��߶���, ������Ϸ��ɫ��״̬
+/**
+ * 守护者对象 保存游戏角色的状态
+ */
 public class Caretaker {
 
-	//���ֻ����һ��״̬
+	// 只保存一次状态
 	private Memento  memento;
-	//��GameRole ������״̬
+	// GameRole
 	//private ArrayList<Memento> mementos;
-	//�Զ����Ϸ��ɫ������״̬
+	//
 	//private HashMap<String, ArrayList<Memento>> rolesMementos;
 
 	public Memento getMemento() {

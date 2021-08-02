@@ -1,6 +1,6 @@
 package designpattern.mediator.smarthouse;
 
-//ͬ�³�����
+//ͬ 同事的抽象类
 public abstract class Colleague {
 	private Mediator mediator;
 	public String name;
