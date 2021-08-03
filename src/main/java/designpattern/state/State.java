@@ -1,20 +1,19 @@
 package designpattern.state;
 
 /**
- * ״̬������
- * @author Administrator
+ *  状态抽象类
  *
  */
 public abstract class State {
 
 	
-	// �۳����� - 50
+	// 扣除积分 -50
     public abstract void deductMoney();
 
-    // �Ƿ���н�Ʒ
+    // 是否抽中奖品
     public abstract boolean raffle();
 
-    // ���Ž�Ʒ
+    // 发放奖品
     public abstract  void dispensePrize();
 
 }

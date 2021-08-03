@@ -2,10 +2,10 @@ package designpattern.state.money;
 
 public abstract class AbstractState implements State {
 
-	protected static final RuntimeException EXCEPTION = new RuntimeException("�������̲�����");
+	protected static final RuntimeException EXCEPTION = new RuntimeException("操作流程不允许");
 
-	//�����࣬Ĭ��ʵ���� State �ӿڵ����з���
-	//��������з�����������(�����״̬��)��������ѡ��Ľ�����д
+	//抽象类 默认实现了 State接口的所有方法
+	//该类的所有方法 其子类  具体的状态类  可以有选择的进行重写
 	
     @Override
     public void checkEvent(Context context) {

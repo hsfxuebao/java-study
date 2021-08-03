@@ -1,8 +1,8 @@
 package designpattern.state.money;
 
-//����������
+//环境上下文
 public class Context extends AbstractState{
-	//��ǰ��״̬ state, �������ǵ�ҵ�����̴�����ͣ�ı仯
+	//当前状态为 state, 根据我们的业务流程处理，不停的变化
 	private State state;
 
     @Override
@@ -63,7 +63,7 @@ public class Context extends AbstractState{
 
     @Override
     public String getCurrentState() {
-        System.out.println("��ǰ״̬ : " + state.getCurrentState());
+        System.out.println(" 当前状态: " + state.getCurrentState());
         return state.getCurrentState();
     }
 }

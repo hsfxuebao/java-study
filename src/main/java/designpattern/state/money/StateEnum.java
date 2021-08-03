@@ -1,28 +1,26 @@
 package designpattern.state.money;
 
 /**
- * ״̬ö����
- * @author Administrator
- *
+ *  状态枚举类
  */
 public enum StateEnum {
 
-	 //��������
+	 // 订单生成
     GENERATE(1, "GENERATE"),
 
-    //�����
+    // 已审核
     REVIEWED(2, "REVIEWED"),
 
-    //�ѷ���
+    // 已发布
     PUBLISHED(3, "PUBLISHED"),
 
-    //������
+    // 待付款
     NOT_PAY(4, "NOT_PAY"),
 
-    //�Ѹ���
+    // 已付款
     PAID(5, "PAID"),
 
-    //�����
+    // 已完结
     FEED_BACKED(6, "FEED_BACKED");
 
     private int key;

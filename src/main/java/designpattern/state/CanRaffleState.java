@@ -3,9 +3,7 @@ package designpattern.state;
 import java.util.Random;
 
 /**
- * ���Գ齱��״̬
- * @author Administrator
- *
+ * 可以抽奖的状态
  */
 public class CanRaffleState extends State {
 
@@ -15,34 +13,34 @@ public class CanRaffleState extends State {
         this.activity = activity;
     }
 
-    //�Ѿ��۳��˻��֣������ٿ�
+    //已经抽出积分，不能在扣
     @Override
     public void deductMoney() {
-        System.out.println("�Ѿ���ȡ���˻���");
+        System.out.println("已经扣过积分了");
     }
 
-    //���Գ齱, ���꽱�󣬸���ʵ��������ĳ��µ�״̬
+    // 可以抽奖  抽完奖后 根据实际情况 改成新的状态
     @Override
     public boolean raffle() {
-        System.out.println("���ڳ齱�����Եȣ�");
+        System.out.println("正在抽奖  请稍等");
         Random r = new Random();
         int num = r.nextInt(10);
-        // 10%�н�����
+        // 10%中奖机会
         if(num == 0){
-            // �ı�״̬Ϊ���Ž�Ʒ context
+            // 改变活动为发放奖品 context
             activity.setState(activity.getDispenseState());
             return true;
         }else{
-            System.out.println("���ź�û�г��н�Ʒ��");
-            // �ı�״̬Ϊ���ܳ齱
+            System.out.println("很遗憾  没有中奖");
+            // 改变状态不能抽奖
             activity.setState(activity.getNoRafflleState());
             return false;
         }
     }
 
-    // ���ܷ��Ž�Ʒ
+    // 不能发放奖品
     @Override
     public void dispensePrize() {
-        System.out.println("û�н������ܷ��Ž�Ʒ");
+        System.out.println("没中奖  不能发放奖品");
     }
 }

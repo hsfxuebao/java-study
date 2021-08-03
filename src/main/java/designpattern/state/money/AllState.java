@@ -1,6 +1,6 @@
 package designpattern.state.money;
 
-//���־���״̬��
+// 各种具体状态类
 class FeedBackState extends AbstractState {
 
 	@Override
@@ -62,8 +62,8 @@ class PublishState extends AbstractState {
 
 	@Override
 	public void acceptOrderEvent(Context context) {
-		//�ѵ�ǰ״̬����Ϊ  NotPayState������
-		//����Ӧ�ñ���ĸ�״̬��������ͼ������
+		// 把当前状态设置为  NotPayState
+		// 至于应该变成那个状态 由流程图来决定
 		context.setState(new NotPayState());
 	}
 
