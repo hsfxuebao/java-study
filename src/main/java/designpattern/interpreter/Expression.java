@@ -3,14 +3,13 @@ package designpattern.interpreter;
 import java.util.HashMap;
 
 /**
- * ��������ʽ��ͨ��HashMap ��ֵ��, ���Ի�ȡ��������ֵ
+ * 抽象类表达式  通过HashMap 键值对 可以获取到变量的值
  * 
- * @author Administrator
  *
  */
 public abstract class Expression {
 	// a + b - c
-	// ���͹�ʽ����ֵ, key ���ǹ�ʽ(���ʽ) ����[a,b,c], value���Ǿ��Ǿ���ֵ
+	// 解释公式和数值, key 就是公式（表达式） 参数[a,b,c], value就是对应的具体值
 	// HashMap {a=10, b=20}
 	public abstract int interpreter(HashMap<String, Integer> var);
 }

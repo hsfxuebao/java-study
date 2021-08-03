@@ -5,26 +5,26 @@ import java.util.Stack;
 
 public class Calculator {
 
-	// ������ʽ
+	// 定义表达式
 	private Expression expression;
 
-	// ���캯�����Σ�������
+	// 构造器  并解析
 	public Calculator(String expStr) { // expStr = a+b
-		// ���������Ⱥ�˳��
+		// 安排运算先后顺序
 		Stack<Expression> stack = new Stack<>();
-		// ���ʽ��ֳ��ַ����� 
+		// 表达式拆分成字符数组
 		char[] charArray = expStr.toCharArray();// [a, +, b]
 
 		Expression left = null;
 		Expression right = null;
-		//�������ǵ��ַ����飬 ������  [a, +, b]
-		//��Բ�ͬ�������������
+		// 遍历我们的字符数组  [a, +, b]
+		// 针对不同情况 处理
 		for (int i = 0; i < charArray.length; i++) {
 			switch (charArray[i]) {
 			case '+': //
-				left = stack.pop();// ��stackȡ��left => "a"
-				right = new VarExpression(String.valueOf(charArray[++i]));// ȡ���ұ��ʽ "b"
-				stack.push(new AddExpression(left, right));// Ȼ����ݵõ�left �� right ���� AddExpresson����stack
+				left = stack.pop();// 从stack  取出left => "a"
+				right = new VarExpression(String.valueOf(charArray[++i]));// 取出右边表达式 "b"
+				stack.push(new AddExpression(left, right));// 然后根据得到left 和right 构建AddExpression 加入stack
 				break;
 			case '-': // 
 				left = stack.pop();
@@ -32,18 +32,18 @@ public class Calculator {
 				stack.push(new SubExpression(left, right));
 				break;
 			default: 
-				//�����һ�� Var �ʹ���Ҫ�� VarExpression ���󣬲�push�� stack
+				// 如果是一个  var 就创建给VarExpression 对象  并push 到stack
 				stack.push(new VarExpression(String.valueOf(charArray[i])));
 				break;
 			}
 		}
-		//������������ charArray �����stack �͵õ����Expression
+		// 当遍历整个 charArray 数组后 stack 就得到最后 Expression
 		this.expression = stack.pop();
 	}
 
 	public int run(HashMap<String, Integer> var) {
-		//��󽫱��ʽa+b�� var = {a=10,b=20}
-		//Ȼ�󴫵ݸ�expression��interpreter���н���ִ��
+		// 最后将表达式 a+b 和 var = {a=10,b=20}
+		// 然后传递给 expression的interpreter进行解释执行
 		return this.expression.interpreter(var);
 	}
 }

@@ -3,8 +3,7 @@ package designpattern.interpreter;
 import java.util.HashMap;
 
 /**
- * �ӷ�������
- * @author Administrator
+ *  加法解释器
  *
  */
 public class AddExpression extends SymbolExpression  {
@@ -13,12 +12,12 @@ public class AddExpression extends SymbolExpression  {
 		super(left, right);
 	}
 
-	//�������
-	//var ��Ȼ�� {a=10,b=20}..
-	//һ������debug Դ��,��ok
+	//处理相加
+	//var 仍然是 {a=10,b=20}..
+	// 一会我们debug 源码
 	public int interpreter(HashMap<String, Integer> var) {
-		//super.left.interpreter(var) �� ���� left ���ʽ��Ӧ��ֵ a = 10
-		//super.right.interpreter(var): ����right ���ʽ��Ӧֵ b = 20
+		//super.left.interpreter(var) 返回left 表达式对应的值 a = 10
+		//super.right.interpreter(var): 返回right 表达式对应的值 b = 20
 		return super.left.interpreter(var) + super.right.interpreter(var);
 	}
 }
