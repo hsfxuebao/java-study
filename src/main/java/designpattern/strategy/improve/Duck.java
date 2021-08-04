@@ -2,28 +2,28 @@ package designpattern.strategy.improve;
 
 public abstract class Duck {
 
-	//����, ���Խӿ�
+	// 属性 策略模式
 	FlyBehavior flyBehavior;
-	//��������<->���Խӿ�
+	// 其他属性
 	QuackBehavior quackBehavior;
 	
 	public Duck() {
 	
 	}
 
-	public abstract void display();//��ʾѼ����Ϣ
+	public abstract void display();//显示鸭子信息
 	
 	public void quack() {
-		System.out.println("Ѽ�Ӹ¸½�~~");
+		System.out.println("鸭子嘎嘎嘎叫~~");
 	}
 	
 	public void swim() {
-		System.out.println("Ѽ�ӻ���Ӿ~~");
+		System.out.println("鸭子游泳~~");
 	}
 	
 	public void fly() {
 		
-		//�Ľ�
+		// 改进
 		if(flyBehavior != null) {
 			flyBehavior.fly();
 		}

@@ -3,7 +3,7 @@ package designpattern.strategy.improve;
 public class WildDuck extends Duck {
 
 	
-	//������������FlyBehavor �Ķ���
+	// 构造器 传入flyBehavior
 	public  WildDuck() {
 		// TODO Auto-generated constructor stub
 		flyBehavior = new GoodFlyBehavior();
@@ -13,7 +13,7 @@ public class WildDuck extends Duck {
 	@Override
 	public void display() {
 		// TODO Auto-generated method stub
-		System.out.println(" ����ҰѼ ");
+		System.out.println(" 野鸭子 ");
 	}
 
 }

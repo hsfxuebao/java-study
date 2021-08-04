@@ -13,9 +13,9 @@ public class Client {
 		PekingDuck pekingDuck = new PekingDuck();
 		pekingDuck.fly();
 		
-		//��̬�ı�ĳ���������Ϊ, ����Ѽ ���ܷ�
+		// 动态改变某个对象的行为 北京鸭子不能飞翔
 		pekingDuck.setFlyBehavior(new NoFlyBehavior());
-		System.out.println("����Ѽ��ʵ�ʷ�������");
+		System.out.println("北京鸭子的是飞翔能力");
 		pekingDuck.fly();
 	}
 
