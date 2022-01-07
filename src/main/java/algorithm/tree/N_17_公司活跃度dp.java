@@ -1,7 +1,7 @@
 package algorithm.tree;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/23
  */
 public class N_17_公司活跃度dp {

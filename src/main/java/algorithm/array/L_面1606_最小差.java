@@ -3,7 +3,7 @@ package algorithm.array;
 import java.util.Arrays;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/28
  *
  * 给定两个整数数组a和b，计算具有最小差绝对值的一对数值（每个数组中取一个值），并返回该对数值的差

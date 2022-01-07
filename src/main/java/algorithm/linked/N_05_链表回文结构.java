@@ -5,7 +5,7 @@ import algorithm.common.LinkedNode;
 import java.util.Stack;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/16
  */
 

@@ -5,7 +5,7 @@ import com.google.common.collect.ImmutableList;
 import java.util.*;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/29
  *
  * 给定字典中的两个词，长度相等。写一个方法，把一个词转换成另一个词， 但是一次只能改变一个字符。每一步得到的新词都必须能在字典中找到。

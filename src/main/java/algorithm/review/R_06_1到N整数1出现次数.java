@@ -1,7 +1,7 @@
 package algorithm.review;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/20
  *
  * 输入一个整数n，求从1到n这n个整数的十进制表示中1出现的次数。

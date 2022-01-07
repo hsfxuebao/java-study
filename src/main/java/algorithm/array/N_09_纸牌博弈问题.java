@@ -1,7 +1,7 @@
 package algorithm.array;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/23
  *
  * 排成一条线的纸牌博弈问题

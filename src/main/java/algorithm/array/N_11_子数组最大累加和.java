@@ -1,7 +1,7 @@
 package algorithm.array;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/23
  * 一维子数组的最大累加和问题
  *  * 【题目】

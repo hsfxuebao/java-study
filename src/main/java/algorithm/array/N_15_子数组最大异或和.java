@@ -1,7 +1,7 @@
 package algorithm.array;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/23
  *
  * 给定一个数组，求子数组的最大异或和。

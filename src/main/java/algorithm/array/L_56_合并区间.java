@@ -3,7 +3,7 @@ package algorithm.array;
 import java.util.*;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/29
  *
  * 给出一个区间的集合，请合并所有重叠的区间。

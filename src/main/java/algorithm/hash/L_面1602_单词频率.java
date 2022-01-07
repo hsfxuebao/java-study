@@ -3,7 +3,7 @@ package algorithm.hash;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/31
  *
  * 设计一个方法，找出任意指定单词在一本书中的出现频率。

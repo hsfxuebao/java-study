@@ -1,7 +1,7 @@
 package algorithm.review;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/19
  *
  * 不用加减乘除做加减乘除（位运算）

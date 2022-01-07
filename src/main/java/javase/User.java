@@ -1,7 +1,7 @@
 package javase;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * Created on 2021-01-18
  */
 public class User {

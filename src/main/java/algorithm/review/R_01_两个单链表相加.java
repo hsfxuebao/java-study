@@ -4,7 +4,7 @@ import algorithm.common.LinkedNode;
 import algorithm.util.PrintUtils;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/14
  *
  * 问题描述：假设两个链表每个节点值都在0-9之间，那么链表整体可以代表一个整数。例如：9->3>7，可以代表937，6->3,可以代表63

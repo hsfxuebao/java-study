@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/29
  *
  *输入一个整数 n ，求1～n这n个整数的十进制表示中1出现的次数。

@@ -7,7 +7,7 @@ import sun.jvm.hotspot.ui.action.FindAction;
 import java.util.Set;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/28
  *
  * 给定两个整数数组，请交换一对数值（每个数组中取一个数值），使得两个数组所有元素的和相等。

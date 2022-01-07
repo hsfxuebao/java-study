@@ -1,7 +1,7 @@
 package algorithm.dynamic;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/17
  *
  *  给定两个数组w和v，两个数组长度相等，w[i]表示第i件商品的 重量，v[i]表示第i件商品的价值。

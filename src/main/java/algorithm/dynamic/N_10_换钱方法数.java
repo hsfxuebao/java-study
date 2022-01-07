@@ -1,7 +1,7 @@
 package algorithm.dynamic;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/18
  *
  *  换钱的方法数

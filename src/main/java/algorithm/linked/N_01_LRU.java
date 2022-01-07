@@ -1,7 +1,7 @@
 package algorithm.linked;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/16
  */
 

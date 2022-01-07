@@ -1,7 +1,7 @@
 package algorithm.array;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/29
  *
  * 有些数的素因子只有 3，5，7，请设计一个算法找出第 k 个数。注意，不是必须有这些素因子，

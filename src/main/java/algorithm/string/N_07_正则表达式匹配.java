@@ -3,7 +3,7 @@ package algorithm.string;
 /**
  * 不建议看
  *
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/23
  *
  * 字符串匹配问题

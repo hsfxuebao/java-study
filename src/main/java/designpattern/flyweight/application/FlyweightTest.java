@@ -1,7 +1,7 @@
 package designpattern.flyweight.application;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * Created on 2021-08-01
  */
 public class FlyweightTest {

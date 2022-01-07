@@ -9,7 +9,7 @@ import jdk.internal.org.objectweb.asm.ClassVisitor;
 import jdk.internal.org.objectweb.asm.ClassWriter;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * Created on 2021-03-24
  */
 public class Generator {

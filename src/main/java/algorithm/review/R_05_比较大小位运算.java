@@ -1,7 +1,7 @@
 package algorithm.review;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/19
  *
  * 给定两个数a和b，如何不用比较运算符，返回较大的数

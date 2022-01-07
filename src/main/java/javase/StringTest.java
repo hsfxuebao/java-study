@@ -18,7 +18,7 @@ import cn.hutool.core.codec.Base32;
 
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/04/15
  */
 public class StringTest {

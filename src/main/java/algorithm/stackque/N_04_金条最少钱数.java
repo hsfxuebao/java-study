@@ -3,7 +3,7 @@ package algorithm.stackque;
 import java.util.PriorityQueue;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/17
  *
  * 一块金条切成两半，是需要花费和长度数值一样的铜板的。比如 长度为20的 金条，不管切成长度多大的两半，都要花费20个铜 板。一群人想整分整块金 条，

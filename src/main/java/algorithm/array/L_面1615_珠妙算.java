@@ -3,7 +3,7 @@ package algorithm.array;
 import algorithm.util.PrintUtils;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/29
  *
  * 珠玑妙算游戏（the game of master mind）的玩法如下。

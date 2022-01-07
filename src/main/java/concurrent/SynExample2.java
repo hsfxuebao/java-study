@@ -3,7 +3,7 @@ package concurrent;
 import org.openjdk.jol.info.ClassLayout;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/04/22
  */
 public class SynExample2 {

@@ -1,7 +1,7 @@
 package algorithm.tree;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/23
  *
  * Morris遍历 利用Morris遍历实现二叉树的先序，中序，后续遍历，时间复 杂度O(N)，额外空间复杂度O(1)。

@@ -4,7 +4,7 @@ import algorithm.util.PrintUtils;
 import org.omg.CORBA.MARSHAL;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/27
  * 编写一种算法，若M × N矩阵中某个元素为0，则将其所在的行与列清零。
  *

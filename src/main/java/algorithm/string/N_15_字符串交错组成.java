@@ -2,7 +2,7 @@ package algorithm.string;
 
 /**
  * 未看
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/26
  * * 字符串的交错组成
  *  * 【题目】 给定三个字符串str1、str2和aim，如果aim包含且仅包含来自str1和str2的所有 字符，而且在aim中属于str1的字符之间保持原来在str1中的顺序，属于str2的 字符之间保持原来在str2中的顺序，那么称aim是str1和str2的交错组成。实现 一个函数，判断aim是否是str1和str2交错组成。

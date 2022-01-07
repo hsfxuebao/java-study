@@ -3,7 +3,7 @@ package algorithm.tree;
 import algorithm.common.TreeNode;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/17
  *
  * 平衡二叉树

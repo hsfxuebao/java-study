@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/17
  */
 public class N_03_字符串全部子序列 {

@@ -7,7 +7,7 @@ import sun.security.util.Length;
 import java.util.Map;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/29
  *
  * 给定一个放有字符和数字的数组，找到最长的子数组，且包含的字符和数字的个数相同。

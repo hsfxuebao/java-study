@@ -3,7 +3,7 @@ package algorithm.array;
 import org.apache.commons.lang3.StringUtils;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/27
  * 实现一个算法，确定一个字符串 s 的所有字符是否全都不同。
  *

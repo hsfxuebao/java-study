@@ -3,7 +3,7 @@ package algorithm.array;
 import java.util.HashMap;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/23
  *
  * 给定一个数组arr，和一个整数num，求在arr中，累加和等于num的最长 子数组的长度

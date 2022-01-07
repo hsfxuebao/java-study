@@ -2,7 +2,7 @@ package algorithm.common;
 
 /**
  * 树的结构
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/13
  */
 public class TreeNode {

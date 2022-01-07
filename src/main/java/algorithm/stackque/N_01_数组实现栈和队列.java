@@ -1,7 +1,7 @@
 package algorithm.stackque;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/15
  *
  * 数组实现固定大小的栈和队列

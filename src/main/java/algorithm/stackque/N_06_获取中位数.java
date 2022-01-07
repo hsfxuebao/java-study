@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/17
  *
  * 一个数据流中，随时可以获取中位数

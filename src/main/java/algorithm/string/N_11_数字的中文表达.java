@@ -1,7 +1,7 @@
 package algorithm.string;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/25
  */
 public class N_11_数字的中文表达 {

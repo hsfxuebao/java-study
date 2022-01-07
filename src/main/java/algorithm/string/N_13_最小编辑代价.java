@@ -2,7 +2,7 @@ package algorithm.string;
 
 /**
  * 未看
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/26
  *
  *  * 最小编辑代价

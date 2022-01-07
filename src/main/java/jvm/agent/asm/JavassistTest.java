@@ -19,7 +19,7 @@ public class JavassistTest {
         m.insertBefore("{ System.out.println(\"start\"); }");
         m.insertAfter("{ System.out.println(\"end\"); }");
         Class c = cc.toClass();
-        cc.writeFile("/Users/haoshaofei/Desktop");
+        cc.writeFile("/Users/hsfxuebao/Desktop");
         Base h = (Base)c.newInstance();
         h.process();
     }

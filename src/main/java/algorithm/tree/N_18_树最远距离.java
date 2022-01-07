@@ -3,7 +3,7 @@ package algorithm.tree;
 import algorithm.common.TreeNode;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/23
  * 
  *  二叉树中，一个节点可以往上走和往下走，那么从节点A总能走到节点 B。

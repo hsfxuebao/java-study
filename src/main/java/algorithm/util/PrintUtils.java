@@ -7,7 +7,7 @@ import algorithm.common.LinkedNode;
  *
  * 打印工具类
  *
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/15
  */
 public class PrintUtils {

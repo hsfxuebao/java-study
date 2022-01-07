@@ -1,7 +1,7 @@
 package algorithm.array;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/28
  *
  * 面试题 10.01. 合并排序的数组

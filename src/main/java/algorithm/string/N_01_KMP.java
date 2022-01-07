@@ -1,7 +1,7 @@
 package algorithm.string;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/17
  *
  * 字符串匹配算法，返回index

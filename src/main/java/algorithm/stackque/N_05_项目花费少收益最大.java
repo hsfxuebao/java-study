@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/17
  *
  * 输入: 参数1，正数数组costs 参数2，正数数组profits 参数3， 正数k 参数4，正数m

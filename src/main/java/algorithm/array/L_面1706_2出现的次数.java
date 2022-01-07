@@ -1,7 +1,7 @@
 package algorithm.array;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/29
  *
  * 编写一个方法，计算从 0 到 n (含 n) 中数字 2 出现的次数。

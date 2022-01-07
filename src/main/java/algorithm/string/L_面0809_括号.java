@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/29
  *
  * 括号。设计一种算法，打印n对括号的所有合法的（例如，开闭一一对应）组合。

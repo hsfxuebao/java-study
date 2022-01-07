@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * Created on 2021-08-04
  */
 public class strategyTest {

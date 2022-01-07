@@ -1,7 +1,7 @@
 package algorithm.array;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/18
  *
  * 给定一个数组arr，全是正数;一个整数aim，求累加和等 于aim的最长子数组，

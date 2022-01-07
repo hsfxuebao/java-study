@@ -3,7 +3,7 @@ package algorithm.linked;
 import algorithm.common.LinkedNode;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/29
  *
  * 给定两个用链表表示的整数，每个节点包含一个数位。

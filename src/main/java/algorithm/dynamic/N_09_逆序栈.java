@@ -3,7 +3,7 @@ package algorithm.dynamic;
 import java.util.Stack;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/17
  *
  * 给你一个栈，请你逆序这个栈，不能申请额外的数据结构，只能

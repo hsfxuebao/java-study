@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/28
  *
  * 找出数组中重复的数字。

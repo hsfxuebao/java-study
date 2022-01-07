@@ -3,7 +3,7 @@ package algorithm.tree;
 import algorithm.common.TreeNode;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/19
  *
  * 判断T1树是否包含T2树

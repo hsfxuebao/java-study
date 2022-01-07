@@ -5,7 +5,7 @@ import java.util.HashMap;
 import com.google.common.collect.Maps;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/04/12
  */
 public class DeadLockDemo {

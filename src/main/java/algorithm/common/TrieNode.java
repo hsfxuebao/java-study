@@ -1,7 +1,7 @@
 package algorithm.common;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/17
  *
  * 字典树

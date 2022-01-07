@@ -3,7 +3,7 @@ package algorithm.linked;
 import algorithm.common.LinkedNode;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/16
  */
 

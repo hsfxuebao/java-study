@@ -1,7 +1,7 @@
 package algorithm.dynamic;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/17
  * 有一头母牛，它每年年初生一头小母牛。
  * 每头小母牛从第四个年头开始，每年年初也生一头小母牛。请编程实现在第n年的时候，共有多少头母牛？

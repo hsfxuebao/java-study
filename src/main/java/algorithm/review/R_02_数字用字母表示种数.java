@@ -4,7 +4,7 @@ import org.apache.commons.lang3.StringUtils;
 
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/16
  * <p>
  * a = 1;b =2,c=3,....z=26;input ：String[0-9],输出，种数

@@ -4,7 +4,7 @@ import java.security.acl.Group;
 import java.util.*;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/31
  *
  * 编写一种方法，对字符串数组进行排序，将所有变位词组合在一起。变位词是指字母相同，但排列不同的字符串。

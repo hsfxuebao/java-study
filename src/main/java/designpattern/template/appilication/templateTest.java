@@ -1,7 +1,7 @@
 package designpattern.template.appilication;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * Created on 2021-08-04
  */
 public class templateTest {

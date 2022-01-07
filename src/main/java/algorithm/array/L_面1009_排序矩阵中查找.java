@@ -1,7 +1,7 @@
 package algorithm.array;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/29
  *
  * 给定M×N矩阵，每一行、每一列都按升序排列，请编写代码找出某元素。

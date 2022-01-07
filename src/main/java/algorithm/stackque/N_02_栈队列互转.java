@@ -5,7 +5,7 @@ import java.util.Queue;
 import java.util.Stack;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/15
  */
 public class N_02_栈队列互转 {

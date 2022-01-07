@@ -5,7 +5,7 @@ import algorithm.common.TreeNode;
 import java.util.HashMap;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/19
  *
  * 给定一棵二叉树的头节点head，

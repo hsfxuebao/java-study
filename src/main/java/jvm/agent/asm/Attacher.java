@@ -13,6 +13,6 @@ public class Attacher {
             AgentInitializationException {
         // 传入目标 JVM pid
         VirtualMachine vm = VirtualMachine.attach("61576");
-        vm.loadAgent("/Users/haoshaofei/IdeaProjects/java-study/out/testagent/testagent.jar");
+        vm.loadAgent("/Users/hsfxuebao/IdeaProjects/java-study/out/testagent/testagent.jar");
     }
 }

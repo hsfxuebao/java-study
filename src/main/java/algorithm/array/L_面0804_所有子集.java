@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/27
  *
  * 幂集。编写一种方法，返回某集合的所有子集。集合中不包含重复的元素。

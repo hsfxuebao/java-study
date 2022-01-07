@@ -3,7 +3,7 @@ package algorithm.string;
 import java.util.LinkedList;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/23
  *
  * 给定一个字符串str，str表示一个公式，公式里可能有整数、加减乘除符号和 左右括号，返回公式的计算结果。

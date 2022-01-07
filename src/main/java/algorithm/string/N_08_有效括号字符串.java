@@ -1,7 +1,7 @@
 package algorithm.string;
 
 /**
- * @author haoshaofei
+ * @author hsfxuebao
  * @date 2020/03/23
  *
  * 括号问题
